@@ -1,0 +1,23 @@
+---
+id: berlin-electoral-districts-geodata
+metadata:
+  name: Berlin Electoral Districts geodata
+  owner: Open Lifeworlds
+  description:
+  url:
+  license:
+  updated:
+  schema:
+input_ports:
+transformation_steps:
+output_ports:
+observability:
+  quality:
+  operational:
+  slas:
+  security:
+consumers:
+use_cases:
+classification: source-aligned
+ubiquitous_language: []
+tags:
