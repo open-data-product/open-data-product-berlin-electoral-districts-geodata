@@ -18,6 +18,15 @@ input_ports:
       updated: 2019-05-13
     files:
       - https://download.statistik-berlin-brandenburg.de/c1cbf6968ccbb352/189fc1ad462e/BTW2013_BE_Wahllokale_Schluessel.csv
+  - id: berlin-electoral-districts-european-elections-2014
+    metadata:
+      name: Geometrien der Europawahl Berlin 2014
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://daten.berlin.de/datensaetze/geometrien-der-europawahl-berlin-2014
+      license: Creative Commons Attribution License (cc-by)
+      updated: 2020-10-12
+    files:
+      - https://download.statistik-berlin-brandenburg.de/c029f84035837945/ebbe3670345d/RBS_OD_STI_EU1405.zip
 transformation_steps:
 output_ports:
 observability:
