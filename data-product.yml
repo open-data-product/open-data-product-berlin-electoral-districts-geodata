@@ -9,6 +9,15 @@ metadata:
   updated:
   schema:
 input_ports:
+  - id: berlin-electoral-districts-federal-elections-2013
+    metadata:
+      name: Wahllokale zur Bundestagswahl 2013 in Berlin
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://daten.berlin.de/datensaetze/wahllokale-zur-bundestagswahl-2013-in-berlin
+      license: Creative Commons Attribution License (cc-by)
+      updated: 2019-05-13
+    files:
+      - https://download.statistik-berlin-brandenburg.de/c1cbf6968ccbb352/189fc1ad462e/BTW2013_BE_Wahllokale_Schluessel.csv
 transformation_steps:
 output_ports:
 observability:
