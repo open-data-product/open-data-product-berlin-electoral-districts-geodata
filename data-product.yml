@@ -27,6 +27,15 @@ input_ports:
       updated: 2020-10-12
     files:
       - https://download.statistik-berlin-brandenburg.de/c029f84035837945/ebbe3670345d/RBS_OD_STI_EU1405.zip
+  - id: berlin-electoral-districts-berlin-election-2016
+    metadata:
+      name: Geometrien der Wahlbezirke für die Wahl zum Abgeordnetenhaus von Berlin und zu den Bezirksversammlungen 2016
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fur-die-wahl-zum-abgeordnetenhaus-von-berlin-undbvv
+      license: Creative Commons Attribution License (cc-by)
+      updated: 2019-05-13
+    files:
+      - https://download.statistik-berlin-brandenburg.de/151935287e405aaa/c7bcebf1a199/RBS_OD_UWB_AGH_09_2016.zip
 transformation_steps:
 output_ports:
 observability:
@@ -37,5 +46,5 @@ observability:
 consumers:
 use_cases:
 classification: source-aligned
-ubiquitous_language: []
+ubiquitous_language: [ ]
 tags:
