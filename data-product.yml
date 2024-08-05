@@ -36,6 +36,15 @@ input_ports:
       updated: 2019-05-13
     files:
       - https://download.statistik-berlin-brandenburg.de/151935287e405aaa/c7bcebf1a199/RBS_OD_UWB_AGH_09_2016.zip
+  - id: berlin-electoral-districts-federal-elections-2017
+    metadata:
+      name: Geometrien der Wahlbezirke für die Bundestagswahl in Berlin 2017
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fuer-die-bundestagswahl-in-berlin-2017
+      license: Creative Commons Attribution License (cc-by)
+      updated: 2019-05-13
+    files:
+      - https://download.statistik-berlin-brandenburg.de/253a62a4ec4bd715/d2a5ad97d6f3/RBS_OD_Wahlgebiete_BTW17.zip
 transformation_steps:
 output_ports:
 observability:
