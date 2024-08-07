@@ -63,6 +63,15 @@ input_ports:
       updated: 2021-02-26
     files:
       - https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip
+  - id: berlin-electoral-districts-berlin-election-2021
+    metadata:
+      name: Geometrien der Wahllokale für die Wahlen zum Deutschen Bundestag in Berlin und zum Abgeordnetenhaus von Berlin 2021
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://daten.berlin.de/datensaetze/geometrien-wahllokale-bundestagswahl-abgeordnetenhaus-berlin-2021
+      license: Creative Commons Attribution License (cc-by)
+      updated: 2021-02-26
+    files:
+      - https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip
 transformation_steps:
 output_ports:
 observability:
