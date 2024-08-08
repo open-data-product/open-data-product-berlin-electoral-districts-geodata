@@ -12,82 +12,100 @@ input_ports:
   - id: berlin-electoral-districts-federal-elections-2013
     metadata:
       name: Wahllokale zur Bundestagswahl 2013 in Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/wahllokale-zur-bundestagswahl-2013-in-berlin
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-05-13
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/c1cbf6968ccbb352/189fc1ad462e/BTW2013_BE_Wahllokale_Schluessel.csv
   - id: berlin-electoral-districts-european-elections-2014
     metadata:
       name: Geometrien der Europawahl Berlin 2014
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/geometrien-der-europawahl-berlin-2014
       license: Creative Commons Attribution License (cc-by)
       updated: 2020-10-12
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/c029f84035837945/ebbe3670345d/RBS_OD_STI_EU1405.zip
   - id: berlin-electoral-districts-berlin-election-2016
     metadata:
       name: Geometrien der Wahlbezirke für die Wahl zum Abgeordnetenhaus von Berlin und zu den Bezirksversammlungen 2016
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fur-die-wahl-zum-abgeordnetenhaus-von-berlin-undbvv
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-05-13
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/151935287e405aaa/c7bcebf1a199/RBS_OD_UWB_AGH_09_2016.zip
   - id: berlin-electoral-districts-federal-elections-2017
     metadata:
       name: Geometrien der Wahlbezirke für die Bundestagswahl in Berlin 2017
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fuer-die-bundestagswahl-in-berlin-2017
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-05-13
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/253a62a4ec4bd715/d2a5ad97d6f3/RBS_OD_Wahlgebiete_BTW17.zip
   - id: berlin-electoral-districts-european-elections-2019
     metadata:
       name: Geometrien der Wahlbezirke für die Europawahl 2019 in Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fur-die-europawahl-2019-in-berlin
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-03-04
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/b77e4aac570fd7b5/f5f517e4330d/RBS_OD_UWB_EU2019.zip
   - id: berlin-electoral-districts-federal-elections-2021
     metadata:
       name: Geometrien der Wahllokale für die Wahlen zum Deutschen Bundestag in Berlin und zum Abgeordnetenhaus von Berlin 2021
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/geometrien-wahllokale-bundestagswahl-abgeordnetenhaus-berlin-2021
       license: Creative Commons Attribution License (cc-by)
       updated: 2021-02-26
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip
   - id: berlin-electoral-districts-berlin-election-2021
     metadata:
       name: Geometrien der Wahllokale für die Wahlen zum Deutschen Bundestag in Berlin und zum Abgeordnetenhaus von Berlin 2021
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/geometrien-wahllokale-bundestagswahl-abgeordnetenhaus-berlin-2021
       license: Creative Commons Attribution License (cc-by)
       updated: 2021-02-26
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip
   - id: berlin-electoral-districts-federal-elections-2024
     metadata:
       name: Wahlbezirke der Teilwahlwiederholung für die Wahl des Deutschen Bundestag 2024 in Berlin
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/wahlbezirke-der-teilwahlwiederholung-fur-die-wahl-des-deutschen-bundestag-2024-in-berlin
       license: Creative Commons Attribution License (cc-by)
       updated: 2024-01-11
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/5706ea3c21816a95/699dfdb61d85/Berlin_BT21_Teilwiederholungs23_Wahlbezirke.csv
   - id: berlin-electoral-districts-european-elections-2024
     metadata:
       name: Geometrien der Wahllokale für die Wahl des Europäischen Parlaments in Berlin 2024
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
+      description:
       url: https://daten.berlin.de/datensaetze/geometrien-der-wahllokale-fur-die-wahl-des-europaischen-parlaments-in-berlin-2024
       license: Creative Commons Attribution License (cc-by)
       updated: 2024-02-29
+      schema:
     files:
       - https://download.statistik-berlin-brandenburg.de/7ea18662c6e242f0/9e03e4e983eb/RBS_OD_Wahllokale_UWB_EU24.zip
 transformation_steps:
@@ -100,5 +118,5 @@ observability:
 consumers:
 use_cases:
 classification: source-aligned
-ubiquitous_language: [ ]
+ubiquitous_language: []
 tags:
