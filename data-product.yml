@@ -81,6 +81,15 @@ input_ports:
       updated: 2024-01-11
     files:
       - https://download.statistik-berlin-brandenburg.de/5706ea3c21816a95/699dfdb61d85/Berlin_BT21_Teilwiederholungs23_Wahlbezirke.csv
+  - id: berlin-electoral-districts-european-elections-2024
+    metadata:
+      name: Geometrien der Wahllokale für die Wahl des Europäischen Parlaments in Berlin 2024
+      author: Amt für Statistik Berlin-Brandenburg
+      url: https://daten.berlin.de/datensaetze/geometrien-der-wahllokale-fur-die-wahl-des-europaischen-parlaments-in-berlin-2024
+      license: Creative Commons Attribution License (cc-by)
+      updated: 2024-02-29
+    files:
+      - https://download.statistik-berlin-brandenburg.de/7ea18662c6e242f0/9e03e4e983eb/RBS_OD_Wahllokale_UWB_EU24.zip
 transformation_steps:
 output_ports:
 observability:
