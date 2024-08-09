@@ -1,6 +1,8 @@
 import os
+import zipfile
 
 import requests
+
 from lib.config.data_product_manifest_loader import DataProductManifest
 from lib.tracking_decorator import TrackingDecorator
 
@@ -33,6 +35,10 @@ def extract_data(
                     quiet=quiet,
                 )
 
+                # Unzip file
+                if file_name.endswith(".zip"):
+                    unzip_file(file_path=file_path, file_name=file_name, quiet=quiet)
+
 
 def download_file(file_path, file_name, url, clean, quiet):
     # Check if result needs to be generated
@@ -48,7 +54,27 @@ def download_file(file_path, file_name, url, clean, quiet):
                 print(f"✗️ Error: {str(data.status_code)}, url {url}")
         except Exception as e:
             print(f"✗️ Exception: {str(e)}, url {url}")
-            return None
 
     elif not quiet:
         print(f"✓ Already exists {file_name}")
+
+
+def unzip_file(file_path, file_name, quiet):
+    try:
+        with zipfile.ZipFile(file_path, "r") as zip_ref:
+            for member in zip_ref.namelist():
+                if not member.endswith("/"):
+                    filename = os.path.basename(member)
+                    destination_path = os.path.join(
+                        os.path.dirname(file_path), filename
+                    )
+
+                    with zip_ref.open(member) as source, open(
+                        destination_path, "wb"
+                    ) as target:
+                        target.write(source.read())
+
+            if not quiet:
+                print(f"✓ Unzip {file_name}")
+    except Exception as e:
+        print(f"✗️ Exception: {str(e)}, file {file_name}")
