@@ -109,6 +109,9 @@ input_ports:
     files:
       - https://download.statistik-berlin-brandenburg.de/7ea18662c6e242f0/9e03e4e983eb/RBS_OD_Wahllokale_UWB_EU24.zip
 transformation_steps:
+  - name: Geojson converter
+    path: lib/transform/data_geojson_converter.py
+    description: converts shape files into geojson
 output_ports:
 observability:
   quality:
