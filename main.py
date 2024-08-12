@@ -9,6 +9,7 @@ from lib.documentation.data_product_manifest_updater import update_data_product_
 from lib.extract.data_extractor import extract_data
 from lib.tracking_decorator import TrackingDecorator
 from lib.transform.data_geojson_converter import convert_to_geojson
+from lib.transform.data_projection_converter import convert_projection
 
 file_path = os.path.realpath(__file__)
 script_path = os.path.dirname(file_path)
@@ -67,6 +68,14 @@ def main(argv):
     convert_to_geojson(
         data_transformation=data_transformation,
         source_path=bronze_path,
+        results_path=silver_path,
+        clean=clean,
+        quiet=quiet,
+    )
+
+    convert_projection(
+        data_transformation=data_transformation,
+        source_path=silver_path,
         results_path=silver_path,
         clean=clean,
         quiet=quiet,

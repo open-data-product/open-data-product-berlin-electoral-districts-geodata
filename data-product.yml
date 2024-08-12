@@ -112,6 +112,9 @@ transformation_steps:
   - name: Geojson converter
     path: lib/transform/data_geojson_converter.py
     description: converts shape files into geojson
+  - name: Projection converter
+    path: lib/transform/data_projection_converter.py
+    description: converts geojson to polar projection (epsg:4326)
 output_ports:
 observability:
   quality:
