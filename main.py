@@ -10,6 +10,7 @@ from lib.extract.data_extractor import extract_data
 from lib.tracking_decorator import TrackingDecorator
 from lib.transform.data_geojson_converter import convert_to_geojson
 from lib.transform.data_projection_converter import convert_projection
+from lib.transform.data_bounding_box_converter import convert_bounding_box
 
 file_path = os.path.realpath(__file__)
 script_path = os.path.dirname(file_path)
@@ -74,6 +75,14 @@ def main(argv):
     )
 
     convert_projection(
+        data_transformation=data_transformation,
+        source_path=silver_path,
+        results_path=silver_path,
+        clean=clean,
+        quiet=quiet,
+    )
+
+    convert_bounding_box(
         data_transformation=data_transformation,
         source_path=silver_path,
         results_path=silver_path,

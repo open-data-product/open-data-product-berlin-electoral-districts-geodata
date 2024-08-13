@@ -115,6 +115,9 @@ transformation_steps:
   - name: Projection converter
     path: lib/transform/data_projection_converter.py
     description: converts geojson to polar projection (epsg:4326)
+  - name: Bounding box converter
+    path: lib/transform/data_bounding_box_converter.py
+    description: adds bounding box to each feature
 output_ports:
 observability:
   quality:
