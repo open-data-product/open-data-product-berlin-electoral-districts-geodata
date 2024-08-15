@@ -10,8 +10,6 @@ from tqdm import tqdm
 
 from lib.tracking_decorator import TrackingDecorator
 
-target_projection_number = "4326"
-
 
 @TrackingDecorator.track_time
 def convert_projection(
@@ -35,7 +33,7 @@ def convert_projection(
                     projection_number = projection.split(":")[-1]
 
                     if not clean and (
-                        projection_number == target_projection_number
+                        projection_number == file.target_projection_number
                         or projection_number == "CRS84"
                     ):
                         already_exists += 1
@@ -45,10 +43,10 @@ def convert_projection(
 
                     geojson_polar = convert_to_polar(
                         geojson=geojson,
-                        target_projection_number=target_projection_number,
+                        target_projection_number=file.target_projection_number,
                         source_projection=pyproj.Proj(init=f"epsg:{projection_number}"),
                         target_projection=pyproj.Proj(
-                            init=f"epsg:{target_projection_number}"
+                            init=f"epsg:{file.target_projection_number}"
                         ),
                     )
 

@@ -5,34 +5,17 @@ from typing import List, Optional
 
 import yaml
 from dacite import from_dict
-from lib.tracking_decorator import TrackingDecorator
 from yaml import MappingNode
 from yaml.constructor import ConstructorError
 
-
-@dataclass
-class Name:
-    name: str
-    type: Optional[str] = "str"
-
-
-@dataclass
-class Dataset:
-    target_file_name: str
-    sheet_name: str
-    header: Optional[int] = None
-    names: Optional[List[Name]] = field(default_factory=list)
-    skip_rows: Optional[int] = 0
-    skip_cols: Optional[int] = 0
-    drop_columns: Optional[List[str]] = field(default_factory=list)
-    head: Optional[int] = None
+from lib.tracking_decorator import TrackingDecorator
 
 
 @dataclass
 class File:
     source_file_name: str
     target_file_name: str
-    datasets: Optional[List[Dataset]] = field(default_factory=list)
+    target_projection_number: int
 
 
 @dataclass
