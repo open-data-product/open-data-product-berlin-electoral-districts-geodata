@@ -27,37 +27,45 @@ def convert_projection(
                     results_path, input_port.id, file.target_file_name
                 )
 
-                with open(source_file_path, "r", encoding="utf-8") as geojson_file:
-                    geojson = json.load(geojson_file, strict=False)
-                    projection = str(geojson["crs"]["properties"]["name"])
-                    projection_number = projection.split(":")[-1]
+                try:
+                    with open(source_file_path, "r", encoding="utf-8") as geojson_file:
+                        geojson = json.load(geojson_file, strict=False)
+                        projection = str(geojson["crs"]["properties"]["name"])
+                        projection_number = projection.split(":")[-1]
 
-                    if not clean and (
-                        projection_number == file.target_projection_number
-                        or projection_number == "CRS84"
-                    ):
-                        already_exists += 1
-                        if not quiet:
-                            print(f"✓ Already exists {file.target_file_name}")
-                        continue
+                        if not clean and (
+                            projection_number == str(file.target_projection_number)
+                            or projection_number == "CRS84"
+                        ):
+                            already_exists += 1
+                            if not quiet:
+                                print(f"✓ Already converted {file.target_file_name}")
+                            continue
 
-                    geojson_polar = convert_to_polar(
-                        geojson=geojson,
-                        target_projection_number=file.target_projection_number,
-                        source_projection=pyproj.Proj(init=f"epsg:{projection_number}"),
-                        target_projection=pyproj.Proj(
-                            init=f"epsg:{file.target_projection_number}"
-                        ),
-                    )
+                        geojson_polar = convert_to_polar(
+                            geojson=geojson,
+                            target_projection_number=file.target_projection_number,
+                            source_projection=pyproj.Proj(
+                                init=f"epsg:{projection_number}"
+                            ),
+                            target_projection=pyproj.Proj(
+                                init=f"epsg:{file.target_projection_number}"
+                            ),
+                        )
 
-                    with open(
-                        target_file_path, "w", encoding="utf-8"
-                    ) as geojson_polar_file:
-                        json.dump(geojson_polar, geojson_polar_file, ensure_ascii=False)
+                        with open(
+                            target_file_path, "w", encoding="utf-8"
+                        ) as geojson_polar_file:
+                            json.dump(
+                                geojson_polar, geojson_polar_file, ensure_ascii=False
+                            )
 
-                    converted += 1
-                    if not quiet:
-                        print(f"✓ Convert {file.target_file_name}")
+                            converted += 1
+                            if not quiet:
+                                print(f"✓ Convert {file.target_file_name}")
+                except Exception as e:
+                    exception += 1
+                    print(f"✗️ Exception: {str(e)}")
 
     print(
         f"convert_projection finished with already_exists: {already_exists}, converted: {converted}, empty: {empty}, exception: {exception}"

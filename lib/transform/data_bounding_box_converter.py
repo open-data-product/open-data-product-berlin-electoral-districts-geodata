@@ -36,7 +36,7 @@ def convert_bounding_box(
                     ):
                         already_exists += 1
                         if not quiet:
-                            print(f"✓ Already exists {file.target_file_name}")
+                            print(f"✓ Already converted {file.target_file_name}")
                         continue
 
                     geojson_with_bounding_box = extend_by_bounding_box(geojson)
@@ -50,9 +50,9 @@ def convert_bounding_box(
                             ensure_ascii=False,
                         )
 
-                    converted += 1
-                    if not quiet:
-                        print(f"✓ Convert {file.target_file_name}")
+                        converted += 1
+                        if not quiet:
+                            print(f"✓ Convert {file.target_file_name}")
 
     print(
         f"convert_bounding_box finished with already_exists: {already_exists}, converted: {converted}, empty: {empty}, exception: {exception}"

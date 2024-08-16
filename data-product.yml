@@ -112,9 +112,9 @@ transformation_steps:
   - name: Geojson converter
     path: lib/transform/data_geojson_converter.py
     description: converts shape files into geojson
-  - name: Geometry cleaner
-    path: lib/transform/data_geometry_cleaer.py
-    description: cleans inconsistent geometry
+  - name: Geometry converter
+    path: lib/transform/data_geometry_converter.py
+    description: converts inconsistent geometry
   - name: Projection converter
     path: lib/transform/data_projection_converter.py
     description: converts geojson to polar projection (epsg:4326)

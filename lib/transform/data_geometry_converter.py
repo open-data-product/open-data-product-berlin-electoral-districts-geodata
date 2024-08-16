@@ -9,7 +9,7 @@ from lib.tracking_decorator import TrackingDecorator
 
 
 @TrackingDecorator.track_time
-def clean_data_geometry(
+def convert_data_geometry(
     data_transformation, source_path, results_path, clean=False, quiet=False
 ):
     already_exists, converted, empty, exception = 0, 0, 0, 0
@@ -28,30 +28,29 @@ def clean_data_geometry(
                     with open(source_file_path, "r", encoding="utf-8") as geojson_file:
                         geojson = json.load(geojson_file, strict=False)
 
-                    geojson, changed = clean_geometry(geojson, quiet)
+                    geojson, changed = convert_geometry(geojson, quiet)
 
-                    if changed:
-                        with open(
-                            target_file_path, "w", encoding="utf-8"
-                        ) as geojson_file:
-                            json.dump(geojson, geojson_file, ensure_ascii=False)
-
-                            converted += 1
-                            if not quiet:
-                                print(f"✓ Clean {file.target_file_name}")
-                    else:
+                    if not changed:
                         already_exists += 1
                         if not quiet:
-                            print(f"✓ Already cleaned {file.target_file_name}")
+                            print(f"✓ Already converted {file.target_file_name}")
+                        continue
+
+                    with open(target_file_path, "w", encoding="utf-8") as geojson_file:
+                        json.dump(geojson, geojson_file, ensure_ascii=False)
+
+                        converted += 1
+                        if not quiet:
+                            print(f"✓ Clean {file.target_file_name}")
                 except Exception as e:
                     exception += 1
                     print(f"✗️ Exception: {str(e)}")
     print(
-        f"clean_data_geometry finished with already_exists: {already_exists}, converted: {converted}, empty: {empty}, exception: {exception}"
+        f"convert_data_geometry finished with already_exists: {already_exists}, converted: {converted}, empty: {empty}, exception: {exception}"
     )
 
 
-def clean_geometry(geojson, quiet):
+def convert_geometry(geojson, quiet):
     changed = False
 
     for feature in tqdm(

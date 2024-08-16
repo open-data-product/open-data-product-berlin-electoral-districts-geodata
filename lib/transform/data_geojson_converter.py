@@ -22,7 +22,7 @@ def convert_to_geojson(data_transformation, source_path, results_path, clean, qu
                 if not clean and os.path.exists(target_file_path):
                     already_exists += 1
                     if not quiet:
-                        print(f"✓ Already exists {file.target_file_name}")
+                        print(f"✓ Already converted {file.target_file_name}")
                     continue
 
                 _, source_file_extension = os.path.splitext(source_file_path)

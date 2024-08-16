@@ -11,7 +11,7 @@ from lib.tracking_decorator import TrackingDecorator
 from lib.transform.data_bounding_box_converter import convert_bounding_box
 from lib.transform.data_geojson_converter import convert_to_geojson
 from lib.transform.data_projection_converter import convert_projection
-from lib.transform.data_geometry_cleaner import clean_data_geometry
+from lib.transform.data_geometry_converter import convert_data_geometry
 
 file_path = os.path.realpath(__file__)
 script_path = os.path.dirname(file_path)
@@ -75,7 +75,7 @@ def main(argv):
         quiet=quiet,
     )
 
-    clean_data_geometry(
+    convert_data_geometry(
         data_transformation=data_transformation,
         source_path=silver_path,
         results_path=silver_path,
