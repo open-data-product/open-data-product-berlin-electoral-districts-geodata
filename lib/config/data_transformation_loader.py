@@ -12,10 +12,18 @@ from lib.tracking_decorator import TrackingDecorator
 
 
 @dataclass
+class Property:
+    name: str
+    rename: Optional[str] = None
+    remove: Optional[bool] = None
+
+
+@dataclass
 class File:
     source_file_name: str
     target_file_name: str
     target_projection_number: int
+    properties: Optional[List[Property]] = field(default_factory=list)
 
 
 @dataclass

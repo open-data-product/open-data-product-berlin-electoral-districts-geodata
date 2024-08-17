@@ -5,33 +5,80 @@ input_ports:
       - source_file_name: RBS_OD_STI_EU1405.shp
         target_file_name: berlin-electoral-districts-european-elections-2014.geojson
         target_projection_number: 4326
+        properties:
+          - { name: STI, rename: electoral_district_id }
+          - { name: WKR, rename: constituency_id }
+          - { name: BRFW, rename: postal_voting_district_id }
   - id: berlin-electoral-districts-berlin-election-2016
     files:
       - source_file_name: UWB.shp
         target_file_name: berlin-electoral-districts-berlin-election-2016.geojson
         target_projection_number: 4326
+        properties:
+          - { name: UWB, rename: electoral_district_id }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: AWK, rename: constituency_id }
   - id: berlin-electoral-districts-federal-elections-2017
     files:
       - source_file_name: RBS_OD_UWB.shp
         target_file_name: berlin-electoral-districts-federal-elections-2017.geojson
         target_projection_number: 4326
+        properties:
+          - { name: FID_1, remove: True }
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB2, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: berlin_election_electoral_district_id }
+          - { name: BEZ, rename: district_id }
   - id: berlin-electoral-districts-european-elections-2019
     files:
       - source_file_name: RBS_OD_UWB.shp
         target_file_name: berlin-electoral-districts-european-elections-2019.geojson
         target_projection_number: 4326
+        properties:
+          - { name: FID, remove: True }
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB2, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: berlin_election_electoral_district_id }
+          - { name: BEZ, rename: district_id }
+          - { name: BWK, rename: federal_election_electoral_district_id }
+          - { name: OW, remove: True }
   - id: berlin-electoral-districts-federal-elections-2021
     files:
       - source_file_name: RBS_OD_UWB_AH21.shp
         target_file_name: berlin-electoral-districts-federal-elections-2021.geojson
         target_projection_number: 4326
+        properties:
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB3, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: berlin_election_electoral_district_id }
+          - { name: BWK, rename: federal_election_electoral_district_id }
   - id: berlin-electoral-districts-berlin-election-2021
     files:
       - source_file_name: RBS_OD_UWB_AH21.shp
         target_file_name: berlin-electoral-districts-berlin-election-2021.geojson
         target_projection_number: 4326
+        properties:
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB3, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: berlin_election_electoral_district_id }
+          - { name: BWK, rename: federal_election_electoral_district_id }
   - id: berlin-electoral-districts-european-elections-2024
     files:
       - source_file_name: RBS_OD_UWB_EU24.shp
         target_file_name: berlin-electoral-districts-european-elections-2024.geojson
         target_projection_number: 4326
+        properties:
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB3, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: berlin_election_electoral_district_id }
+          - { name: BWK, rename: federal_election_electoral_district_id }

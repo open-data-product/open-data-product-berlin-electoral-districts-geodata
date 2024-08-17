@@ -112,6 +112,9 @@ transformation_steps:
   - name: Geojson converter
     path: lib/transform/data_geojson_converter.py
     description: converts shape files into geojson
+  - name: Property converter
+    path: lib/transform/data_property_converter.py
+    description: renames and removes properties of geojson features
   - name: Geometry converter
     path: lib/transform/data_geometry_converter.py
     description: converts inconsistent geometry
