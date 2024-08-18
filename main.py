@@ -116,7 +116,7 @@ def main(argv):
         data_product_manifest=data_product_manifest,
         config_path=script_path,
         data_paths=[silver_path, gold_path],
-        file_endings=(".csv"),
+        file_endings=(".geojson"),
     )
 
     generate_data_product_canvas(

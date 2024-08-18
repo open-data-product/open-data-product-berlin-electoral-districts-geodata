@@ -3,10 +3,10 @@ id: berlin-electoral-districts-geodata
 metadata:
   name: Berlin Electoral Districts geodata
   owner: Open Lifeworlds
-  description:
-  url:
-  license:
-  updated:
+  description: Data product providing Berlin geodata of electoral districts
+  url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata
+  license: CC-BY 4.0
+  updated: 2024-12-02
   schema:
 input_ports:
   - id: berlin-electoral-districts-federal-elections-2013
@@ -18,8 +18,25 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-05-13
       schema:
+        - name: Schlüssel
+          description: identifier
+        - name: Bezirk
+          description: district
+        - name: Wahlbezirk
+          description: electoral district
+        - name: Lokal
+          description: polling station
+        - name: Bezeichnung
+          description: description
+        - name: PLZ
+          description: zip code
+        - name: Ort
+          description: city
+        - name: Zugang
+          description: access
     files:
       - https://download.statistik-berlin-brandenburg.de/c1cbf6968ccbb352/189fc1ad462e/BTW2013_BE_Wahllokale_Schluessel.csv
+      - https://download.statistik-berlin-brandenburg.de/17e5dee65d363229/db408945d106/BTW2013_BE_Wahllokale_Beschreibung.pdf
   - id: berlin-electoral-districts-european-elections-2014
     metadata:
       name: Geometrien der Europawahl Berlin 2014
@@ -29,8 +46,21 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2020-10-12
       schema:
+        - name: FID
+          description: random identifier
+        - name: shape
+          description: geometry of a electoral district
+        - name: STI (Wahlbezirk)
+          description: ID of the electoral district (5 digits)
+        - name: BRFW (Briefwahlbezirk)
+          description: ID of the postal voting district (3 digits + 1 letter)
+        - name: WKR (Wahlkreis)
+          description: ID of the constituency for Berlin election (4 digits)
+        - name: BEZ (Bezirk)
+          description: ID of the district (2 digits)
     files:
       - https://download.statistik-berlin-brandenburg.de/c029f84035837945/ebbe3670345d/RBS_OD_STI_EU1405.zip
+      - https://download.statistik-berlin-brandenburg.de/43f4a582730c778d/0006b4c1facc/Beschreibung_RBS_OD_STI.pdf
   - id: berlin-electoral-districts-berlin-election-2016
     metadata:
       name: Geometrien der Wahlbezirke für die Wahl zum Abgeordnetenhaus von Berlin und zu den Bezirksversammlungen 2016
@@ -40,8 +70,21 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-05-13
       schema:
+        - name: FID
+          description: random identifier
+        - name: shape
+          description: geometry of a electoral district
+        - name: UWB (Urnen-Wahlbezirk)
+          description: ID of the polling district (5 digits)
+        - name: BWB (Briefwahlbezirk)
+          description: ID of the postal voting district (3 digits + 1 letter)
+        - name: AWK (Abgenordnetenhaus-Wahlkreis)
+          description: ID of the House of Representatives electoral district (4 digits)
+        - name: BEZ (Bezirk)
+          description: ID of the district (2 digits)
     files:
       - https://download.statistik-berlin-brandenburg.de/151935287e405aaa/c7bcebf1a199/RBS_OD_UWB_AGH_09_2016.zip
+      - https://download.statistik-berlin-brandenburg.de/c812862e8c2d0b56/64ec5e81c7bd/Beschreibung_RBS_OD_UWB.pdf
   - id: berlin-electoral-districts-federal-elections-2017
     metadata:
       name: Geometrien der Wahlbezirke für die Bundestagswahl in Berlin 2017
@@ -51,8 +94,23 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-05-13
       schema:
+        - name: FID
+          description: random identifier
+        - name: UWB (Urnen-Wahlbezirk)
+          description: ID of polling district (5 digits)
+        - name: UWB3 (Urnen-Wahlbezirk)
+          description: ID of polling district (3 digits), unique for each district
+        - name: BWB (Briefwahlbezirk)
+          description: ID of postal voting district (3 digits + 1 letter), first 2 digits represent the district
+        - name: BWB2 (Briefwahlbezirk)
+          description: ID of postal voting district (1 digit + 1 letter)
+        - name: AWK (Abgenordnetenhaus-Wahlkreis)
+          description: ID of House of Representatives electoral district (4 digits)
+        - name: BEZ (Bezirk)
+          description: ID of the district (2 digits)
     files:
       - https://download.statistik-berlin-brandenburg.de/253a62a4ec4bd715/d2a5ad97d6f3/RBS_OD_Wahlgebiete_BTW17.zip
+      - https://download.statistik-berlin-brandenburg.de/348d8f8843e9fcb5/e56c0825471c/RBS_OD_Wahlgebiete_BTW17_Beschreibung.pdf
   - id: berlin-electoral-districts-european-elections-2019
     metadata:
       name: Geometrien der Wahlbezirke für die Europawahl 2019 in Berlin
@@ -62,8 +120,29 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2019-03-04
       schema:
+        - name: FID
+          description: random identifier
+        - name: UWB (Urnen-Wahlbezirk)
+          description: ID of the polling district (5 digits)
+        - name: UWB3 (Urnen-Wahlbezirk)
+          description: ID of the polling district (3 digits), unique for each district
+        - name: BWB (Briefwahlbezirk)
+          description: ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district
+        - name: BWB2 (Briefwahlbezirk)
+          description: ID of the postal voting district (1 digit + 1 letter)
+        - name: AWK (Abgenordnetenhaus-Wahlkreis)
+          description: ID of the House of Representatives electoral district (4 digits)
+        - name: BEZ (Bezirk)
+          description: ID of the district (2 digits)
+        - name: BWK (Bundestagswahlkreis)
+          description: ID of the federal election electoral district (3 digits)
+        - name: OW (OstWest)
+          description: part of the city, gW geographically West, gO geographically East
+        - name: shape
+          description: geometry of a electoral district
     files:
       - https://download.statistik-berlin-brandenburg.de/b77e4aac570fd7b5/f5f517e4330d/RBS_OD_UWB_EU2019.zip
+      - https://download.statistik-berlin-brandenburg.de/7cf803f14f8229be/737117910c21/Beschreibung_RBS_OD_Wahlgebiete_EU2019.pdf
   - id: berlin-electoral-districts-federal-elections-2021
     metadata:
       name: Geometrien der Wahllokale für die Wahlen zum Deutschen Bundestag in Berlin und zum Abgeordnetenhaus von Berlin 2021
@@ -73,8 +152,37 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2021-02-26
       schema:
+        - name: BEZ (Bezirk)
+          description: ID of the district (2 digits)
+        - name: BWK (Bundestagswahlkreis)
+          description: ID of the federal election electoral district (2 digits)
+        - name: WB (Wahlbezirk)
+          description: ID of the electoral district (3 digits) or ID postal voting district (1 digit + 1 or 2 digits)
+        - name: Briefwahl
+          description: postal voting, 0 = no, 1 = yes
+        - name: Bezeich1 (Bezeichnung des Wahllokals)
+          description: name of the facility, as specified by electoral office
+        - name: Bezeich2 (Bezeichnung Zusatz)
+          description: additional information about the name of the facility, as specified by electoral office
+        - name: Raum
+          description: room, as specified by electoral office
+        - name: Etage
+          description: floor, as specified by electoral office
+        - name: STR (Straßenname)
+          description: street, as specified by electoral office
+        - name: HNr (Hausnummer mit Zusatz)
+          description: house number, as specified by electoral office
+        - name: PLZ (Postleitzahl)
+          description: zip code, as specified by electoral office
+        - name: Barrierefr (Barrierefrei)
+          description: barrier-free, 0 = no, 1 = yes, 2 = yes with assistant
+        - name: Lat_WGS84
+          description: latitude
+        - name: Lon_WGS84
+          description: longitude
     files:
       - https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip
+      - https://download.statistik-berlin-brandenburg.de/ee24f01b9875e3cb/7a7df27ba4aa/RBS_OD_Wahllokal_BTW_AH2021_Beschreibung.pdf
   - id: berlin-electoral-districts-berlin-election-2021
     metadata:
       name: Geometrien der Wahllokale für die Wahlen zum Deutschen Bundestag in Berlin und zum Abgeordnetenhaus von Berlin 2021
@@ -84,8 +192,37 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2021-02-26
       schema:
+        - name: BEZ (Bezirk)
+          description: ID of the district (2 digits)
+        - name: BWK (Bundestagswahlkreis)
+          description: ID of the federal election electoral district (2 digits)
+        - name: WB (Wahlbezirk)
+          description: ID of the electoral district (3 digits) or ID postal voting district (1 digit + 1 or 2 digits)
+        - name: Briefwahl
+          description: postal voting, 0 = no, 1 = yes
+        - name: Bezeich1 (Bezeichnung des Wahllokals)
+          description: name of the facility, as specified by electoral office
+        - name: Bezeich2 (Bezeichnung Zusatz)
+          description: additional information about the name of the facility, as specified by electoral office
+        - name: Raum
+          description: room, as specified by electoral office
+        - name: Etage
+          description: floor, as specified by electoral office
+        - name: STR (Straßenname)
+          description: street, as specified by electoral office
+        - name: HNr (Hausnummer mit Zusatz)
+          description: house number, as specified by electoral office
+        - name: PLZ (Postleitzahl)
+          description: zip code, as specified by electoral office
+        - name: Barrierefr (Barrierefrei)
+          description: barrier-free, 0 = no, 1 = yes, 2 = yes with assistant
+        - name: Lat_WGS84
+          description: latitude
+        - name: Lon_WGS84
+          description: longitude
     files:
       - https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip
+      - https://download.statistik-berlin-brandenburg.de/ee24f01b9875e3cb/7a7df27ba4aa/RBS_OD_Wahllokal_BTW_AH2021_Beschreibung.pdf
   - id: berlin-electoral-districts-federal-elections-2024
     metadata:
       name: Wahlbezirke der Teilwahlwiederholung für die Wahl des Deutschen Bundestag 2024 in Berlin
@@ -95,8 +232,29 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2024-01-11
       schema:
+        - name: Adresse
+          description: key ID
+        - name: OstWest
+          description: part of the city (Berlin-Ost, Berlin-West)
+        - name: Bezirk
+          description: ID of the district
+        - name: BunWkr
+          description: ID of the federal election electoral district
+        - name: AghWkr
+          description: ID of the Berlin election electoral district
+        - name: BriefWbz
+          description: ID of the postal voting district
+        - name: WBezArt
+          description: type of the electoral district, B = Briefwahlbezirk, W = Urnenwahlbezirk
+        - name: Wahlbezirk
+          description: ID of the electoral district
+        - name: Wbz
+          description: ID of the electoral district, to be used when joining with geometry
+        - name: Hinweis
+          description: hint whether the electoral district is affected by the partial repetition
     files:
       - https://download.statistik-berlin-brandenburg.de/5706ea3c21816a95/699dfdb61d85/Berlin_BT21_Teilwiederholungs23_Wahlbezirke.csv
+      - https://download.statistik-berlin-brandenburg.de/7504e8613c562b94/113f5bf39a22/Berlin_BT21_Teilwiederholung23_Wahlbezirke_Meta.pdf
   - id: berlin-electoral-districts-european-elections-2024
     metadata:
       name: Geometrien der Wahllokale für die Wahl des Europäischen Parlaments in Berlin 2024
@@ -106,8 +264,33 @@ input_ports:
       license: Creative Commons Attribution License (cc-by)
       updated: 2024-02-29
       schema:
+        - name: BEZ (Bezirk)
+          description: ID of the district (2 digits)
+        - name: BWK (Bundestagswahlkreis)
+          description: ID of the federal election electoral district (2 digits)
+        - name: WB (Wahlbezirk)
+          description: ID of the electoral district (3 digits) or ID postal voting district (1 digit + 1 or 2 digits)
+        - name: Briefwahl
+          description: postal voting, 0 = no, 1 = yes
+        - name: Bezeich1 (Bezeichnung des Wahllokals)
+          description: name of the facility, as specified by electoral office
+        - name: Bezeich2 (Bezeichnung Zusatz)
+          description: additional information about the name of the facility, as specified by electoral office
+        - name: Raum
+          description: room, as specified by electoral office
+        - name: Etage
+          description: floor, as specified by electoral office
+        - name: STR (Straßenname)
+          description: street, as specified by electoral office
+        - name: HNr (Hausnummer mit Zusatz)
+          description: house number, as specified by electoral office
+        - name: PLZ (Postleitzahl)
+          description: zip code, as specified by electoral office
+        - name: Barrierefr (Barrierefrei)
+          description: barrier-free, 0 = no, 1 = yes, 2 = yes with assistant
     files:
       - https://download.statistik-berlin-brandenburg.de/7ea18662c6e242f0/9e03e4e983eb/RBS_OD_Wahllokale_UWB_EU24.zip
+      - https://download.statistik-berlin-brandenburg.de/5994c00f44d7329a/f38e17070942/RBS_OD_Wahllokal_EU24_Beschreibung.pdf
 transformation_steps:
   - name: Geojson converter
     path: lib/transform/data_geojson_converter.py
@@ -123,15 +306,167 @@ transformation_steps:
     description: converts geojson to polar projection (epsg:4326)
   - name: Bounding box converter
     path: lib/transform/data_bounding_box_converter.py
-    description: adds bounding box to each feature
+    description: adds a bounding box to each feature
 output_ports:
+  - id: berlin-electoral-districts-berlin-election-2016
+    metadata:
+      name: Berlin Electoral Districts Berlin Election 2016
+      owner: Open Lifeworlds
+      description: Berlin electoral districts for Berlin election 2016
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2016
+      license: CC-BY 4.0
+      updated: 2024-12-02
+      schema:
+        - name: electoral_district_id
+          description: ID of the electoral district (5 digits)
+        - name: postal_voting_district_id
+          description: ID of the postal voting district (3 digits + 1 letter)
+        - name: constituency_id
+          description: ID of the House of Representatives electoral district (4 digits)
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-berlin-election-2016/berlin-electoral-districts-berlin-election-2016.geojson
+  - id: berlin-electoral-districts-berlin-election-2021
+    metadata:
+      name: Berlin Electoral Districts Berlin Election 2021
+      owner: Open Lifeworlds
+      description: Berlin electoral districts for Berlin election 2021
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2021
+      license: CC-BY 4.0
+      updated: 2024-12-02
+      schema:
+        - name: electoral_district_id
+          description: ID of the electoral district (5 digits)
+        - name: electoral_district_id_3
+          description: ID of the polling district (3 digits), unique for each district
+        - name: postal_voting_district_id
+          description: ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district
+        - name: postal_voting_district_id_2
+          description: ID of the postal voting district (1 digit + 1 letter)
+        - name: berlin_election_electoral_district_id
+          description: ID of the House of Representatives electoral district (4 digits)
+        - name: federal_election_electoral_district_id
+          description: ID of the federal election electoral district (3 digits)
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-berlin-election-2021/berlin-electoral-districts-berlin-election-2021.geojson
+  - id: berlin-electoral-districts-european-elections-2014
+    metadata:
+      name: Berlin Electoral Districts European Elections 2014
+      owner: Open Lifeworlds
+      description: Berlin electoral districts for European elections 2014
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-elections-2014
+      license: CC-BY 4.0
+      updated: 2024-12-02
+      schema:
+        - name: electoral_district_id
+          description: ID of the electoral district (5 digits)
+        - name: constituency_id
+          description: ID of the constituency for Berlin election (4 digits)
+        - name: postal_voting_district_id
+          description: ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-european-elections-2014/berlin-electoral-districts-european-elections-2014.geojson
+  - id: berlin-electoral-districts-european-elections-2019
+    metadata:
+      name: Berlin Electoral Districts European Elections 2019
+      owner: Open Lifeworlds
+      description: Berlin electoral districts for European elections 2019
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-elections-2019
+      license: CC-BY 4.0
+      updated: 2024-12-02
+      schema:
+        - name: electoral_district_id
+          description: ID of the electoral district (5 digits)
+        - name: electoral_district_id_3
+          description: ID of the polling district (3 digits), unique for each district
+        - name: postal_voting_district_id
+          description: ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district
+        - name: postal_voting_district_id_2
+          description: ID of the postal voting district (1 digit + 1 letter)
+        - name: berlin_election_electoral_district_id
+          description: ID of the House of Representatives electoral district (4 digits)
+        - name: federal_election_electoral_district_id
+          description: ID of the federal election electoral district (3 digits)
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-european-elections-2019/berlin-electoral-districts-european-elections-2019.geojson
+  - id: berlin-electoral-districts-european-elections-2024
+    metadata:
+      name: Berlin Electoral Districts European Elections 2024
+      owner: Open Lifeworlds
+      description: Berlin electoral districts for European elections 2024
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-elections-2024
+      license: CC-BY 4.0
+      updated: 2024-12-02
+      schema:
+        - name: electoral_district_id
+          description: ID of the electoral district (5 digits)
+        - name: electoral_district_id_3
+          description: ID of the polling district (3 digits), unique for each district
+        - name: postal_voting_district_id
+          description: ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district
+        - name: postal_voting_district_id_2
+          description: ID of the postal voting district (1 digit + 1 letter)
+        - name: berlin_election_electoral_district_id
+          description: ID of the House of Representatives electoral district (4 digits)
+        - name: federal_election_electoral_district_id
+          description: ID of the federal election electoral district (3 digits)
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-european-elections-2024/berlin-electoral-districts-european-elections-2024.geojson
+  - id: berlin-electoral-districts-federal-elections-2017
+    metadata:
+      name: Berlin Electoral Districts Federal Elections 2017
+      owner: Open Lifeworlds
+      description: Berlin electoral districts for federal elections 2017
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-elections-2017
+      license: CC-BY 4.0
+      updated: 2024-12-02
+      schema:
+        - name: electoral_district_id
+          description: ID of the electoral district (5 digits)
+        - name: electoral_district_id_3
+          description: ID of the polling district (3 digits), unique for each district
+        - name: postal_voting_district_id
+          description: ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district
+        - name: postal_voting_district_id_2
+          description: ID of the postal voting district (1 digit + 1 letter)
+        - name: berlin_election_electoral_district_id
+          description: ID of the House of Representatives electoral district (4 digits)
+        - name: federal_election_electoral_district_id
+          description: ID of the federal election electoral district (3 digits)
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-federal-elections-2017/berlin-electoral-districts-federal-elections-2017.geojson
+  - id: berlin-electoral-districts-federal-elections-2021
+    metadata:
+      name: Berlin Electoral Districts Federal Elections 2021
+      owner: Open Lifeworlds
+      description: Berlin electoral districts for federal elections 2021
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-elections-2021
+      license: CC-BY 4.0
+      updated: 2024-12-02
+      schema:
+        - name: electoral_district_id
+          description: ID of the electoral district (5 digits)
+        - name: electoral_district_id_3
+          description: ID of the polling district (3 digits), unique for each district
+        - name: postal_voting_district_id
+          description: ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district
+        - name: postal_voting_district_id_2
+          description: ID of the postal voting district (1 digit + 1 letter)
+        - name: berlin_election_electoral_district_id
+          description: ID of the House of Representatives electoral district (4 digits)
+        - name: federal_election_electoral_district_id
+          description: ID of the federal election electoral district (3 digits)
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-federal-elections-2021/berlin-electoral-districts-federal-elections-2021.geojson
 observability:
   quality:
   operational:
   slas:
   security:
 consumers:
+  - projects that display electoral districts
+  - other data products that combine geospatial data with statistics data
 use_cases:
+  - to display data related to electoral districts in Berlin on an interactive map
 classification: source-aligned
 ubiquitous_language: []
 tags:

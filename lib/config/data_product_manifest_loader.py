@@ -9,6 +9,12 @@ from lib.tracking_decorator import TrackingDecorator
 
 
 @dataclass
+class SchemaItem:
+    name: str
+    description: Optional[str]
+
+
+@dataclass
 class Metadata:
     name: str
     owner: str
@@ -16,7 +22,7 @@ class Metadata:
     url: Optional[str]
     license: Optional[str]
     updated: Optional[date]
-    schema: Optional[List[str]]
+    schema: Optional[List[SchemaItem]] = field(default_factory=list)
 
 
 @dataclass
