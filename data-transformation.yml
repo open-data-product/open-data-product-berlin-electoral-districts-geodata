@@ -31,6 +31,9 @@ input_ports:
           - { name: BWB2, rename: postal_voting_district_id_2 }
           - { name: AWK, rename: berlin_election_electoral_district_id }
           - { name: BEZ, rename: district_id }
+          - { name: BWK, rename: federal_election_electoral_district_id }
+          - { name: BEZNAME, remove: True }
+          - { name: OW, remove: True }
   - id: berlin-electoral-districts-european-elections-2019
     files:
       - source_file_name: RBS_OD_UWB.shp

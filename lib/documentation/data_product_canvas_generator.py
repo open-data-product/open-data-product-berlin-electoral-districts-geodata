@@ -4,6 +4,8 @@ from lib.config.data_product_manifest_loader import DataProductManifest
 from lib.config.data_transformation_loader import DataTransformation
 from lib.tracking_decorator import TrackingDecorator
 
+SCHEMA_AS_TABLE = True
+
 
 @TrackingDecorator.track_time
 def generate_data_product_canvas(
@@ -46,14 +48,28 @@ def generate_data_product_canvas(
             if port.metadata.updated:
                 content += f"\n* updated: {port.metadata.updated}"
 
+            if port.metadata.schema:
+                content += "\n"
+                content += "\n#### Schema"
+                content += "\n"
+
+                if SCHEMA_AS_TABLE:
+                    content += "\n| Name | Description |"
+                    content += "\n| --- | --- |"
+
+                    for item in port.metadata.schema:
+                        content += f"\n| {item.name} | {item.description} |"
+                else:
+                    for item in port.metadata.schema:
+                        content += f"\n* {item.name}: {item.description}"
+
             if port.files:
                 content += "\n"
                 content += "\n#### Files"
                 content += "\n"
 
-            for file in port.files:
-                content += f"\n* [{file.rsplit('/', 1)[-1]}]({file})"
-            content += "\n"
+                for file in port.files:
+                    content += f"\n* [{file.rsplit('/', 1)[-1]}]({file})"
 
     if data_product_manifest.transformation_steps:
         content += "\n"
@@ -79,14 +95,28 @@ def generate_data_product_canvas(
             if port.metadata.updated:
                 content += f"\n* updated: {port.metadata.updated}"
 
+            if port.metadata.schema:
+                content += "\n"
+                content += "\n#### Schema"
+                content += "\n"
+
+                if SCHEMA_AS_TABLE:
+                    content += "\n| Name | Description |"
+                    content += "\n| --- | --- |"
+
+                    for item in port.metadata.schema:
+                        content += f"\n| {item.name} | {item.description} |"
+                else:
+                    for item in port.metadata.schema:
+                        content += f"\n* {item.name}: {item.description}"
+
             if port.files:
                 content += "\n"
                 content += "\n#### Files"
                 content += "\n"
 
-            for file in port.files:
-                content += f"\n* [{file.rsplit('/', 1)[-1]}]({file})"
-            content += "\n"
+                for file in port.files:
+                    content += f"\n* [{file.rsplit('/', 1)[-1]}]({file})"
 
     if data_product_manifest.observability and (
         data_product_manifest.observability.quality
@@ -104,7 +134,6 @@ def generate_data_product_canvas(
             content += "\n"
 
             for quality in data_product_manifest.observability.quality:
-                content += "\n"
                 content += f"\n * {quality}"
 
         if data_product_manifest.observability.operational:
@@ -113,7 +142,6 @@ def generate_data_product_canvas(
             content += "\n"
 
             for operational in data_product_manifest.observability.operational:
-                content += "\n"
                 content += f"\n * {operational}"
 
         if data_product_manifest.observability.slas:
@@ -122,7 +150,6 @@ def generate_data_product_canvas(
             content += "\n"
 
             for sla in data_product_manifest.observability.slas:
-                content += "\n"
                 content += f"\n * {sla}"
 
         if data_product_manifest.observability.security:
@@ -131,7 +158,6 @@ def generate_data_product_canvas(
             content += "\n"
 
             for security in data_product_manifest.observability.security:
-                content += "\n"
                 content += f"\n * {security}"
 
     if data_product_manifest.consumers:
@@ -139,6 +165,9 @@ def generate_data_product_canvas(
         content += "\n## Consumers"
         content += "\n"
         content += "\n**Who is the consumer of the Data Product?**"
+
+        content += "\n"
+        content += "\nConsumers of this data product may include"
 
         for consumer in data_product_manifest.consumers:
             content += "\n"
@@ -151,6 +180,9 @@ def generate_data_product_canvas(
         content += "\n**We believe that ...**"
         content += "\n**We help achieving ...**"
         content += "\n**We know, we are getting there based on ..., ..., ...**"
+
+        content += "\n"
+        content += "\nWe believe that this data product can be used"
 
         for use_case in data_product_manifest.use_cases:
             content += "\n"
