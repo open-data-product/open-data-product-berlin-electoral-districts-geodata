@@ -201,10 +201,17 @@ def generate_data_product_canvas(
         content += "\n## Ubiquitous Language"
         content += "\n"
         content += "\n**Context-specific domain terminology (relevant for Data Product), Data Product polysemes which are used to create the current Data Product**"
+        content += "\n"
 
-        for term in data_product_manifest.ubiquitous_language:
-            content += "\n"
-            content += f"\n* **{term.name}** {term.description}"
+        if SCHEMA_AS_TABLE:
+            content += "\n| Name | Description |"
+            content += "\n| --- | --- |"
+
+            for term in data_product_manifest.ubiquitous_language:
+                content += f"\n| {term.name} | {term.description} |"
+        else:
+            for term in data_product_manifest.ubiquitous_language:
+                content += f"\n* **{term.name}** {term.description}"
 
     content += "\n"
     content += "\n---"
