@@ -55,13 +55,11 @@ Examples:
 
 ## Roadmap
 
-See the [open issues](https://github.com/open-lifeworlds/berlin-electoral-districts-geodata/issues) for a list of
-proposed features (and
-known issues).
+See the [open issues](https://github.com/open-lifeworlds/berlin-electoral-districts-geodata/issues) for a list of proposed features (and known issues).
 
 ## License
 
-Distributed under the GPLv3 License. See [LICENSE.md](./LICENSE.md) for more information.
+Data product distributed under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). See [LICENSE.md](./LICENSE.md) for more information.
 
 ## Contact
 
