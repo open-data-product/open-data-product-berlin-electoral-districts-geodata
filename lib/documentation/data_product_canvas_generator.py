@@ -50,7 +50,7 @@ def generate_data_product_canvas(
 
             if port.metadata.schema:
                 content += "\n"
-                content += "\n#### Schema"
+                content += "\n**Schema**"
                 content += "\n"
 
                 if SCHEMA_AS_TABLE:
@@ -65,7 +65,7 @@ def generate_data_product_canvas(
 
             if port.files:
                 content += "\n"
-                content += "\n#### Files"
+                content += "\n**Files**"
                 content += "\n"
 
                 for file in port.files:
@@ -97,7 +97,7 @@ def generate_data_product_canvas(
 
             if port.metadata.schema:
                 content += "\n"
-                content += "\n#### Schema"
+                content += "\n**Schema**"
                 content += "\n"
 
                 if SCHEMA_AS_TABLE:
@@ -112,7 +112,7 @@ def generate_data_product_canvas(
 
             if port.files:
                 content += "\n"
-                content += "\n#### Files"
+                content += "\n**Files**"
                 content += "\n"
 
                 for file in port.files:
