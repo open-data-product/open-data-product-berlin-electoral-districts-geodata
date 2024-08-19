@@ -17,7 +17,7 @@ class IndentDumper(yaml.Dumper):
 def update_data_product_manifest(
     data_product_manifest: DataProductManifest, config_path, data_paths, file_endings=()
 ):
-    data_product_manifest_path = os.path.join(config_path, "data-product.yml")
+    data_product_manifest_path = os.path.join(config_path, "data-product-manifest.yml")
     data_product_manifest.metadata.updated = datetime.today().date()
 
     output_ports = []
