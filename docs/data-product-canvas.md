@@ -7,7 +7,7 @@
 * description: Data product providing Berlin geodata of electoral districts
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 ## Input Ports
 
@@ -69,7 +69,7 @@
 | shape | geometry of a electoral district |
 | UWB (Urnen-Wahlbezirk) | ID of the polling district (5 digits) |
 | BWB (Briefwahlbezirk) | ID of the postal voting district (3 digits + 1 letter) |
-| AWK (Abgenordnetenhaus-Wahlkreis) | ID of the House of Representatives electoral district (4 digits) |
+| AWK (Abgenordnetenhaus-Wahlkreis) | ID of the electoral district for the election of House of Representatives (4 digits) |
 | BEZ (Bezirk) | ID of the district (2 digits) |
 
 **Files**
@@ -113,9 +113,9 @@
 | UWB3 (Urnen-Wahlbezirk) | ID of the polling district (3 digits), unique for each district |
 | BWB (Briefwahlbezirk) | ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district |
 | BWB2 (Briefwahlbezirk) | ID of the postal voting district (1 digit + 1 letter) |
-| AWK (Abgenordnetenhaus-Wahlkreis) | ID of the House of Representatives electoral district (4 digits) |
+| AWK (Abgenordnetenhaus-Wahlkreis) | ID of the electoral district for the election of House of Representatives (4 digits) |
 | BEZ (Bezirk) | ID of the district (2 digits) |
-| BWK (Bundestagswahlkreis) | ID of the federal election electoral district (3 digits) |
+| BWK (Bundestagswahlkreis) | ID of the electoral district for the federal election (3 digits) |
 | OW (OstWest) | part of the city, gW geographically West, gO geographically East |
 | shape | geometry of a electoral district |
 
@@ -134,7 +134,7 @@
 | Name | Description |
 | --- | --- |
 | BEZ (Bezirk) | ID of the district (2 digits) |
-| BWK (Bundestagswahlkreis) | ID of the federal election electoral district (2 digits) |
+| BWK (Bundestagswahlkreis) | ID of the electoral district for the federal election (2 digits) |
 | WB (Wahlbezirk) | ID of the electoral district (3 digits) or ID postal voting district (1 digit + 1 or 2 digits) |
 | Briefwahl | postal voting, 0 = no, 1 = yes |
 | Bezeich1 (Bezeichnung des Wahllokals) | name of the facility, as specified by electoral office |
@@ -163,7 +163,7 @@
 | Name | Description |
 | --- | --- |
 | BEZ (Bezirk) | ID of the district (2 digits) |
-| BWK (Bundestagswahlkreis) | ID of the federal election electoral district (2 digits) |
+| BWK (Bundestagswahlkreis) | ID of the electoral district for the federal election (2 digits) |
 | WB (Wahlbezirk) | ID of the electoral district (3 digits) or ID postal voting district (1 digit + 1 or 2 digits) |
 | Briefwahl | postal voting, 0 = no, 1 = yes |
 | Bezeich1 (Bezeichnung des Wahllokals) | name of the facility, as specified by electoral office |
@@ -194,7 +194,7 @@
 | Adresse | key ID |
 | OstWest | part of the city (Berlin-Ost, Berlin-West) |
 | Bezirk | ID of the district |
-| BunWkr | ID of the federal election electoral district |
+| BunWkr | ID of the electoral district for the federal election |
 | AghWkr | ID of the Berlin election electoral district |
 | BriefWbz | ID of the postal voting district |
 | WBezArt | type of the electoral district, B = Briefwahlbezirk, W = Urnenwahlbezirk |
@@ -217,7 +217,7 @@
 | Name | Description |
 | --- | --- |
 | BEZ (Bezirk) | ID of the district (2 digits) |
-| BWK (Bundestagswahlkreis) | ID of the federal election electoral district (2 digits) |
+| BWK (Bundestagswahlkreis) | ID of the electoral district for the federal election (2 digits) |
 | WB (Wahlbezirk) | ID of the electoral district (3 digits) or ID postal voting district (1 digit + 1 or 2 digits) |
 | Briefwahl | postal voting, 0 = no, 1 = yes |
 | Bezeich1 (Bezeichnung des Wahllokals) | name of the facility, as specified by electoral office |
@@ -248,7 +248,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2016
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 **Schema**
 
@@ -256,7 +256,7 @@
 | --- | --- |
 | electoral_district_id | ID of the electoral district (5 digits) |
 | postal_voting_district_id | ID of the postal voting district (3 digits + 1 letter) |
-| constituency_id | ID of the House of Representatives electoral district (4 digits) |
+| constituency_id | ID of the electoral district for the election of House of Representatives (4 digits) |
 
 **Files**
 
@@ -265,7 +265,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2021
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 **Schema**
 
@@ -275,8 +275,8 @@
 | electoral_district_id_3 | ID of the polling district (3 digits), unique for each district |
 | postal_voting_district_id | ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district |
 | postal_voting_district_id_2 | ID of the postal voting district (1 digit + 1 letter) |
-| berlin_election_electoral_district_id | ID of the House of Representatives electoral district (4 digits) |
-| federal_election_electoral_district_id | ID of the federal election electoral district (3 digits) |
+| electoral_district_berlin_election_id | ID of the electoral district for the election of House of Representatives (4 digits) |
+| electoral_district_federal_election_id | ID of the electoral district for the federal election (3 digits) |
 
 **Files**
 
@@ -285,7 +285,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-elections-2014
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 **Schema**
 
@@ -302,7 +302,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-elections-2019
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 **Schema**
 
@@ -312,8 +312,8 @@
 | electoral_district_id_3 | ID of the polling district (3 digits), unique for each district |
 | postal_voting_district_id | ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district |
 | postal_voting_district_id_2 | ID of the postal voting district (1 digit + 1 letter) |
-| berlin_election_electoral_district_id | ID of the House of Representatives electoral district (4 digits) |
-| federal_election_electoral_district_id | ID of the federal election electoral district (3 digits) |
+| electoral_district_berlin_election_id | ID of the electoral district for the election of House of Representatives (4 digits) |
+| electoral_district_federal_election_id | ID of the electoral district for the federal election (3 digits) |
 
 **Files**
 
@@ -322,7 +322,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-elections-2024
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 **Schema**
 
@@ -332,8 +332,8 @@
 | electoral_district_id_3 | ID of the polling district (3 digits), unique for each district |
 | postal_voting_district_id | ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district |
 | postal_voting_district_id_2 | ID of the postal voting district (1 digit + 1 letter) |
-| berlin_election_electoral_district_id | ID of the House of Representatives electoral district (4 digits) |
-| federal_election_electoral_district_id | ID of the federal election electoral district (3 digits) |
+| electoral_district_berlin_election_id | ID of the electoral district for the election of House of Representatives (4 digits) |
+| electoral_district_federal_election_id | ID of the electoral district for the federal election (3 digits) |
 
 **Files**
 
@@ -342,7 +342,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-elections-2017
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 **Schema**
 
@@ -352,8 +352,8 @@
 | electoral_district_id_3 | ID of the polling district (3 digits), unique for each district |
 | postal_voting_district_id | ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district |
 | postal_voting_district_id_2 | ID of the postal voting district (1 digit + 1 letter) |
-| berlin_election_electoral_district_id | ID of the House of Representatives electoral district (4 digits) |
-| federal_election_electoral_district_id | ID of the federal election electoral district (3 digits) |
+| electoral_district_berlin_election_id | ID of the electoral district for the election of House of Representatives (4 digits) |
+| electoral_district_federal_election_id | ID of the electoral district for the federal election (3 digits) |
 
 **Files**
 
@@ -362,7 +362,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-elections-2021
 * license: CC-BY 4.0
-* updated: 2024-12-02
+* updated: 2024-12-04
 
 **Schema**
 
@@ -372,8 +372,8 @@
 | electoral_district_id_3 | ID of the polling district (3 digits), unique for each district |
 | postal_voting_district_id | ID of the postal voting district (3 digits + 1 letter), first 2 digits represent the district |
 | postal_voting_district_id_2 | ID of the postal voting district (1 digit + 1 letter) |
-| berlin_election_electoral_district_id | ID of the House of Representatives electoral district (4 digits) |
-| federal_election_electoral_district_id | ID of the federal election electoral district (3 digits) |
+| electoral_district_berlin_election_id | ID of the electoral district for the election of House of Representatives (4 digits) |
+| electoral_district_federal_election_id | ID of the electoral district for the federal election (3 digits) |
 
 **Files**
 
@@ -404,6 +404,15 @@ We believe that this data product can be used
 **The nature of the exposed data (source-aligned, aggregate, consumer-aligned)**
 
 source-aligned
+
+## Ubiquitous Language
+
+**Context-specific domain terminology (relevant for Data Product), Data Product polysemes which are used to create the current Data Product**
+
+| Name | Description |
+| --- | --- |
+| electoral district | German: (Urnen-)Wahlbezirk, UWB |
+| postal voting district | German: Briefwahlbezirk, BWB |
 
 ---
 This data product canvas uses the template of [datamesh-architecture.com](https://www.datamesh-architecture.com/data-product-canvas).
