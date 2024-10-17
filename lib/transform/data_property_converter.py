@@ -59,8 +59,11 @@ def convert_properties(geojson, properties: list[Property]):
         iterable=geojson["features"], desc="Convert features", unit="feature"
     ):
         for property in properties:
-            if property.name not in feature["properties"]:
-                continue
+            if property.concat is not None:
+                feature["properties"][property.name] = "".join(
+                    [feature["properties"][prop] for prop in property.concat]
+                )
+                changed = True
 
             if property.rename is not None and property.name in feature["properties"]:
                 feature["properties"][property.rename] = feature["properties"].pop(
@@ -71,5 +74,4 @@ def convert_properties(geojson, properties: list[Property]):
             if property.remove is not None and property.name in feature["properties"]:
                 feature["properties"].pop(property.name)
                 changed = True
-
     return geojson, changed

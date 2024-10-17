@@ -14,6 +14,7 @@ from lib.tracking_decorator import TrackingDecorator
 @dataclass
 class Property:
     name: str
+    concat: Optional[List[str]] = None
     rename: Optional[str] = None
     remove: Optional[bool] = None
 
