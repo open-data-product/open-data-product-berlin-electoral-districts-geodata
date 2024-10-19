@@ -15,7 +15,7 @@ from lib.tracking_decorator import TrackingDecorator
 def convert_projection(
     data_transformation, source_path, results_path, clean=False, quiet=False
 ):
-    already_exists, converted, empty, exception = 0, 0, 0, 0
+    already_exists, converted, exception = 0, 0, 0
 
     if data_transformation.input_ports:
         for input_port in data_transformation.input_ports:
@@ -68,7 +68,7 @@ def convert_projection(
                     print(f"✗️ Exception: {str(e)}")
 
     print(
-        f"convert_projection finished with already_exists: {already_exists}, converted: {converted}, empty: {empty}, exception: {exception}"
+        f"convert_projection finished with already_exists: {already_exists}, converted: {converted}, exception: {exception}"
     )
 
 

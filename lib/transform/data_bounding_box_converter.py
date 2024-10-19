@@ -15,7 +15,7 @@ from lib.tracking_decorator import TrackingDecorator
 def convert_bounding_box(
     data_transformation, source_path, results_path, clean=False, quiet=False
 ):
-    already_exists, converted, empty, exception = 0, 0, 0, 0
+    already_exists, converted, exception = 0, 0, 0, 0
 
     if data_transformation.input_ports:
         for input_port in data_transformation.input_ports:
@@ -55,7 +55,7 @@ def convert_bounding_box(
                             print(f"✓ Convert {file.target_file_name}")
 
     print(
-        f"convert_bounding_box finished with already_exists: {already_exists}, converted: {converted}, empty: {empty}, exception: {exception}"
+        f"convert_bounding_box finished with already_exists: {already_exists}, converted: {converted}, exception: {exception}"
     )
 
 
