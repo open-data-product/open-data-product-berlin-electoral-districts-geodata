@@ -38,8 +38,9 @@ def convert_projection(
                             or projection_number == "CRS84"
                         ):
                             already_exists += 1
-                            if not quiet:
-                                print(f"✓ Already converted {file.target_file_name}")
+                            not quiet and print(
+                                f"✓ Already converted {file.target_file_name}"
+                            )
                             continue
 
                         geojson_polar = convert_to_polar(
@@ -61,8 +62,7 @@ def convert_projection(
                             )
 
                             converted += 1
-                            if not quiet:
-                                print(f"✓ Convert {file.target_file_name}")
+                            not quiet and print(f"✓ Convert {file.target_file_name}")
                 except Exception as e:
                     exception += 1
                     print(f"✗️ Exception: {str(e)}")

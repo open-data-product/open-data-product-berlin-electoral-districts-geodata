@@ -15,7 +15,7 @@ from lib.tracking_decorator import TrackingDecorator
 def convert_bounding_box(
     data_transformation, source_path, results_path, clean=False, quiet=False
 ):
-    already_exists, converted, exception = 0, 0, 0, 0
+    already_exists, converted, exception = 0, 0, 0
 
     if data_transformation.input_ports:
         for input_port in data_transformation.input_ports:
@@ -35,8 +35,9 @@ def convert_bounding_box(
                         for feature in geojson["features"]
                     ):
                         already_exists += 1
-                        if not quiet:
-                            print(f"✓ Already converted {file.target_file_name}")
+                        not quiet and print(
+                            f"✓ Already converted {file.target_file_name}"
+                        )
                         continue
 
                     geojson_with_bounding_box = extend_by_bounding_box(geojson)
@@ -51,8 +52,7 @@ def convert_bounding_box(
                         )
 
                         converted += 1
-                        if not quiet:
-                            print(f"✓ Convert {file.target_file_name}")
+                        not quiet and print(f"✓ Convert {file.target_file_name}")
 
     print(
         f"convert_bounding_box finished with already_exists: {already_exists}, converted: {converted}, exception: {exception}"

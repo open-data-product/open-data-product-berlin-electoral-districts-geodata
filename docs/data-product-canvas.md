@@ -7,7 +7,7 @@
 * description: Data product providing Berlin geodata of electoral districts
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 ## Input Ports
 
@@ -248,7 +248,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2016
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 **Schema**
 
@@ -265,7 +265,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2021
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 **Schema**
 
@@ -285,7 +285,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2014
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 **Schema**
 
@@ -302,7 +302,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2019
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 **Schema**
 
@@ -322,7 +322,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2024
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 **Schema**
 
@@ -342,7 +342,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2017
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 **Schema**
 
@@ -362,7 +362,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2021
 * license: CC-BY 4.0
-* updated: 2025-03-14
+* updated: 2025-03-19
 
 **Schema**
 

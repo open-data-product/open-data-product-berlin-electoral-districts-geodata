@@ -21,8 +21,7 @@ def convert_to_geojson(data_transformation, source_path, results_path, clean, qu
 
                 if not clean and os.path.exists(target_file_path):
                     already_exists += 1
-                    if not quiet:
-                        print(f"✓ Already converted {file.target_file_name}")
+                    not quiet and print(f"✓ Already converted {file.target_file_name}")
                     continue
 
                 _, source_file_extension = os.path.splitext(source_file_path)
@@ -36,9 +35,7 @@ def convert_to_geojson(data_transformation, source_path, results_path, clean, qu
                             target_file_path, driver="GeoJSON"
                         )
                         converted += 1
-
-                        if not quiet:
-                            print(f"✓ Convert {file.target_file_name}")
+                        not quiet and print(f"✓ Convert {file.target_file_name}")
                 except Exception as e:
                     exception += 1
                     print(f"✗️ Exception: {str(e)}")

@@ -31,8 +31,9 @@ def convert_data_properties(
 
                         if not changed:
                             already_exists += 1
-                            if not quiet:
-                                print(f"✓ Already converted {file.target_file_name}")
+                            not quiet and print(
+                                f"✓ Already converted {file.target_file_name}"
+                            )
                             continue
 
                         with open(
@@ -41,8 +42,7 @@ def convert_data_properties(
                             json.dump(geojson, geojson_file, ensure_ascii=False)
 
                             converted += 1
-                            if not quiet:
-                                print(f"✓ Convert {file.target_file_name}")
+                            not quiet and print(f"✓ Convert {file.target_file_name}")
                 except Exception as e:
                     exception += 1
                     print(f"✗️ Exception: {str(e)}")

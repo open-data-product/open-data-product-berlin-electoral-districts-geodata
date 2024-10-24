@@ -32,16 +32,16 @@ def convert_data_geometry(
 
                     if not changed:
                         already_exists += 1
-                        if not quiet:
-                            print(f"✓ Already converted {file.target_file_name}")
+                        not quiet and print(
+                            f"✓ Already converted {file.target_file_name}"
+                        )
                         continue
 
                     with open(target_file_path, "w", encoding="utf-8") as geojson_file:
                         json.dump(geojson, geojson_file, ensure_ascii=False)
 
                         converted += 1
-                        if not quiet:
-                            print(f"✓ Clean {file.target_file_name}")
+                        not quiet and print(f"✓ Clean {file.target_file_name}")
                 except Exception as e:
                     exception += 1
                     print(f"✗️ Exception: {str(e)}")
