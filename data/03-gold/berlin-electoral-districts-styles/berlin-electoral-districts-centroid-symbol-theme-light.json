@@ -1,0 +1,23 @@
+{
+  "id": "electoral-districts-centroid-symbol",
+  "type": "symbol",
+  "source": "electoral-districts-labels",
+  "layout": {
+    "text-field": [
+      "get",
+      "id"
+    ],
+    "text-variable-anchor": [
+      "center"
+    ],
+    "text-justify": "auto",
+    "text-transform": "uppercase",
+    "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+    "text-size": 14
+  },
+  "paint": {
+    "text-color": "#D16639",
+    "text-halo-color": "#F6F6F4",
+    "text-halo-width": 1
+  }
+}

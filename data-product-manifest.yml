@@ -457,6 +457,22 @@ output_ports:
           description: ID of the electoral district for the federal election (3 digits)
     files:
       - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-federal-election-2021/berlin-electoral-districts-federal-election-2021.geojson
+  - id: berlin-electoral-districts-styles
+    metadata:
+      name: Berlin Electoral Districts Styles
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/03-gold/berlin-electoral-districts-styles
+      license: CC-BY 4.0
+      updated: 2025-03-19
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-centroid-symbol-theme-dark.json
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-centroid-symbol-theme-light.json
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-fill-marked.json
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-fill.json
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-line-highlighted.json
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-line.json
 observability:
   quality:
   operational:

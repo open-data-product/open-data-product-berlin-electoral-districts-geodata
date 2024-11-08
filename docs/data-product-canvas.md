@@ -12,6 +12,7 @@
 ## Input Ports
 
 ### Wahllokale zur Bundestagswahl 2013 in Berlin
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/wahllokale-zur-bundestagswahl-2013-in-berlin
 * license: Creative Commons Attribution License (cc-by)
@@ -34,7 +35,9 @@
 
 * [BTW2013_BE_Wahllokale_Schluessel.csv](https://download.statistik-berlin-brandenburg.de/c1cbf6968ccbb352/189fc1ad462e/BTW2013_BE_Wahllokale_Schluessel.csv)
 * [BTW2013_BE_Wahllokale_Beschreibung.pdf](https://download.statistik-berlin-brandenburg.de/17e5dee65d363229/db408945d106/BTW2013_BE_Wahllokale_Beschreibung.pdf)
+
 ### Geometrien der Europawahl Berlin 2014
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/geometrien-der-europawahl-berlin-2014
 * license: Creative Commons Attribution License (cc-by)
@@ -55,7 +58,9 @@
 
 * [RBS_OD_STI_EU1405.zip](https://download.statistik-berlin-brandenburg.de/c029f84035837945/ebbe3670345d/RBS_OD_STI_EU1405.zip)
 * [Beschreibung_RBS_OD_STI.pdf](https://download.statistik-berlin-brandenburg.de/43f4a582730c778d/0006b4c1facc/Beschreibung_RBS_OD_STI.pdf)
+
 ### Geometrien der Wahlbezirke für die Wahl zum Abgeordnetenhaus von Berlin und zu den Bezirksversammlungen 2016
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fur-die-wahl-zum-abgeordnetenhaus-von-berlin-undbvv
 * license: Creative Commons Attribution License (cc-by)
@@ -76,7 +81,9 @@
 
 * [RBS_OD_UWB_AGH_09_2016.zip](https://download.statistik-berlin-brandenburg.de/151935287e405aaa/c7bcebf1a199/RBS_OD_UWB_AGH_09_2016.zip)
 * [Beschreibung_RBS_OD_UWB.pdf](https://download.statistik-berlin-brandenburg.de/c812862e8c2d0b56/64ec5e81c7bd/Beschreibung_RBS_OD_UWB.pdf)
+
 ### Geometrien der Wahlbezirke für die Bundestagswahl in Berlin 2017
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fuer-die-bundestagswahl-in-berlin-2017
 * license: Creative Commons Attribution License (cc-by)
@@ -98,7 +105,9 @@
 
 * [RBS_OD_Wahlgebiete_BTW17.zip](https://download.statistik-berlin-brandenburg.de/253a62a4ec4bd715/d2a5ad97d6f3/RBS_OD_Wahlgebiete_BTW17.zip)
 * [RBS_OD_Wahlgebiete_BTW17_Beschreibung.pdf](https://download.statistik-berlin-brandenburg.de/348d8f8843e9fcb5/e56c0825471c/RBS_OD_Wahlgebiete_BTW17_Beschreibung.pdf)
+
 ### Geometrien der Wahlbezirke für die Europawahl 2019 in Berlin
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/geometrien-der-wahlbezirke-fur-die-europawahl-2019-in-berlin
 * license: Creative Commons Attribution License (cc-by)
@@ -123,7 +132,9 @@
 
 * [RBS_OD_UWB_EU2019.zip](https://download.statistik-berlin-brandenburg.de/b77e4aac570fd7b5/f5f517e4330d/RBS_OD_UWB_EU2019.zip)
 * [Beschreibung_RBS_OD_Wahlgebiete_EU2019.pdf](https://download.statistik-berlin-brandenburg.de/7cf803f14f8229be/737117910c21/Beschreibung_RBS_OD_Wahlgebiete_EU2019.pdf)
+
 ### Geometrien der Wahllokale für die Wahlen zum Deutschen Bundestag in Berlin und zum Abgeordnetenhaus von Berlin 2021
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/geometrien-wahllokale-bundestagswahl-abgeordnetenhaus-berlin-2021
 * license: Creative Commons Attribution License (cc-by)
@@ -152,7 +163,9 @@
 
 * [RBS_OD_UWB_AH21.zip](https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip)
 * [RBS_OD_Wahllokal_BTW_AH2021_Beschreibung.pdf](https://download.statistik-berlin-brandenburg.de/ee24f01b9875e3cb/7a7df27ba4aa/RBS_OD_Wahllokal_BTW_AH2021_Beschreibung.pdf)
+
 ### Geometrien der Wahllokale für die Wahlen zum Deutschen Bundestag in Berlin und zum Abgeordnetenhaus von Berlin 2021
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/geometrien-wahllokale-bundestagswahl-abgeordnetenhaus-berlin-2021
 * license: Creative Commons Attribution License (cc-by)
@@ -181,7 +194,9 @@
 
 * [RBS_OD_UWB_AH21.zip](https://download.statistik-berlin-brandenburg.de/db8c83613aceb93e/14a42eb32a76/RBS_OD_UWB_AH21.zip)
 * [RBS_OD_Wahllokal_BTW_AH2021_Beschreibung.pdf](https://download.statistik-berlin-brandenburg.de/ee24f01b9875e3cb/7a7df27ba4aa/RBS_OD_Wahllokal_BTW_AH2021_Beschreibung.pdf)
+
 ### Wahlbezirke der Teilwahlwiederholung für die Wahl des Deutschen Bundestag 2024 in Berlin
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/wahlbezirke-der-teilwahlwiederholung-fur-die-wahl-des-deutschen-bundestag-2024-in-berlin
 * license: Creative Commons Attribution License (cc-by)
@@ -206,7 +221,9 @@
 
 * [Berlin_BT21_Teilwiederholungs23_Wahlbezirke.csv](https://download.statistik-berlin-brandenburg.de/5706ea3c21816a95/699dfdb61d85/Berlin_BT21_Teilwiederholungs23_Wahlbezirke.csv)
 * [Berlin_BT21_Teilwiederholung23_Wahlbezirke_Meta.pdf](https://download.statistik-berlin-brandenburg.de/7504e8613c562b94/113f5bf39a22/Berlin_BT21_Teilwiederholung23_Wahlbezirke_Meta.pdf)
+
 ### Geometrien der Wahllokale für die Wahl des Europäischen Parlaments in Berlin 2024
+
 * owner: Amt für Statistik Berlin-Brandenburg
 * url: https://daten.berlin.de/datensaetze/geometrien-der-wahllokale-fur-die-wahl-des-europaischen-parlaments-in-berlin-2024
 * license: Creative Commons Attribution License (cc-by)
@@ -245,6 +262,7 @@
 ## Output Ports
 
 ### Berlin Electoral Districts Berlin Election 2016
+
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2016
 * license: CC-BY 4.0
@@ -261,7 +279,9 @@
 **Files**
 
 * [berlin-electoral-districts-berlin-election-2016.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-berlin-election-2016/berlin-electoral-districts-berlin-election-2016.geojson)
+
 ### Berlin Electoral Districts Berlin Election 2021
+
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2021
 * license: CC-BY 4.0
@@ -281,7 +301,9 @@
 **Files**
 
 * [berlin-electoral-districts-berlin-election-2021.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-berlin-election-2021/berlin-electoral-districts-berlin-election-2021.geojson)
+
 ### Berlin Electoral Districts European Election 2014
+
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2014
 * license: CC-BY 4.0
@@ -298,7 +320,9 @@
 **Files**
 
 * [berlin-electoral-districts-european-election-2014.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-european-election-2014/berlin-electoral-districts-european-election-2014.geojson)
+
 ### Berlin Electoral Districts European Election 2019
+
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2019
 * license: CC-BY 4.0
@@ -318,7 +342,9 @@
 **Files**
 
 * [berlin-electoral-districts-european-election-2019.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-european-election-2019/berlin-electoral-districts-european-election-2019.geojson)
+
 ### Berlin Electoral Districts European Election 2024
+
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2024
 * license: CC-BY 4.0
@@ -338,7 +364,9 @@
 **Files**
 
 * [berlin-electoral-districts-european-election-2024.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-european-election-2024/berlin-electoral-districts-european-election-2024.geojson)
+
 ### Berlin Electoral Districts Federal Election 2017
+
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2017
 * license: CC-BY 4.0
@@ -358,7 +386,9 @@
 **Files**
 
 * [berlin-electoral-districts-federal-election-2017.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-federal-election-2017/berlin-electoral-districts-federal-election-2017.geojson)
+
 ### Berlin Electoral Districts Federal Election 2021
+
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2021
 * license: CC-BY 4.0
@@ -379,6 +409,22 @@
 
 * [berlin-electoral-districts-federal-election-2021.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-federal-election-2021/berlin-electoral-districts-federal-election-2021.geojson)
 
+### Berlin Electoral Districts Styles
+
+* owner: Open Lifeworlds
+* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/03-gold/berlin-electoral-districts-styles
+* license: CC-BY 4.0
+* updated: 2025-03-19
+
+**Files**
+
+* [berlin-electoral-districts-centroid-symbol-theme-dark.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-centroid-symbol-theme-dark.json)
+* [berlin-electoral-districts-centroid-symbol-theme-light.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-centroid-symbol-theme-light.json)
+* [berlin-electoral-districts-fill-marked.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-fill-marked.json)
+* [berlin-electoral-districts-fill.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-fill.json)
+* [berlin-electoral-districts-line-highlighted.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-line-highlighted.json)
+* [berlin-electoral-districts-line.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-line.json)
+
 ## Consumers
 
 **Who is the consumer of the Data Product?**
@@ -386,7 +432,6 @@
 Consumers of this data product may include
 
 * projects that display electoral districts
-
 * other data products that combine geospatial data with statistics data
 
 ## Use Cases
