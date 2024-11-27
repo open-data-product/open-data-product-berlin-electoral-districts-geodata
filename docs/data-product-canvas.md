@@ -7,7 +7,7 @@
 * description: Data product providing Berlin geodata of electoral districts
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 ## Input Ports
 
@@ -266,7 +266,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2016
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 **Schema**
 
@@ -285,7 +285,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2021
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 **Schema**
 
@@ -307,7 +307,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2014
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 **Schema**
 
@@ -326,7 +326,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2019
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 **Schema**
 
@@ -348,7 +348,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2024
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 **Schema**
 
@@ -370,7 +370,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2017
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 **Schema**
 
@@ -392,7 +392,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2021
 * license: CC-BY 4.0
-* updated: 2025-03-19
+* updated: 2025-04-10
 
 **Schema**
 
@@ -408,22 +408,6 @@
 **Files**
 
 * [berlin-electoral-districts-federal-election-2021.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/02-silver/berlin-electoral-districts-federal-election-2021/berlin-electoral-districts-federal-election-2021.geojson)
-
-### Berlin Electoral Districts Styles
-
-* owner: Open Lifeworlds
-* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/tree/main/data/03-gold/berlin-electoral-districts-styles
-* license: CC-BY 4.0
-* updated: 2025-03-19
-
-**Files**
-
-* [berlin-electoral-districts-centroid-symbol-theme-dark.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-centroid-symbol-theme-dark.json)
-* [berlin-electoral-districts-centroid-symbol-theme-light.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-centroid-symbol-theme-light.json)
-* [berlin-electoral-districts-fill-marked.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-fill-marked.json)
-* [berlin-electoral-districts-fill.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-fill.json)
-* [berlin-electoral-districts-line-highlighted.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-line-highlighted.json)
-* [berlin-electoral-districts-line.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/main/data/03-gold/berlin-electoral-districts-styles/berlin-electoral-districts-line.json)
 
 ## Consumers
 
