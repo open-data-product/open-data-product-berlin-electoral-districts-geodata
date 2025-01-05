@@ -59,7 +59,9 @@ def convert_properties(geojson, properties: list[Property]):
         iterable=geojson["features"], desc="Convert features", unit="feature"
     ):
         for property in properties:
-            if property.concat is not None:
+            if property.concat is not None and all(
+                prop in feature["properties"] for prop in property.concat
+            ):
                 feature["properties"][property.name] = "".join(
                     [feature["properties"][prop] for prop in property.concat]
                 )
