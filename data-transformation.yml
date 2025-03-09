@@ -25,6 +25,50 @@ input_ports:
           - { name: BWB3, rename: postal_voting_district_id_2 }
           - { name: AWK, rename: electoral_district_berlin_election_id }
           - { name: BWK, rename: electoral_district_federal_election_id }
+  - id: berlin-electoral-districts-federal-election-2017
+    files:
+      - source_file_name: RBS_OD_UWB.shp
+        target_file_name: berlin-electoral-districts-federal-election-2017.geojson
+        target_projection_number: 4326
+        properties:
+          - { name: id, concat: [ UWB ] }
+          - { name: FID_1, remove: True }
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB2, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: electoral_district_berlin_election_id }
+          - { name: BEZ, rename: district_id }
+          - { name: BWK, rename: electoral_district_federal_election_id }
+          - { name: BEZNAME, remove: True }
+          - { name: OW, remove: True }
+  - id: berlin-electoral-districts-federal-election-2021
+    files:
+      - source_file_name: RBS_OD_UWB_AH21.shp
+        target_file_name: berlin-electoral-districts-federal-election-2021.geojson
+        target_projection_number: 4326
+        properties:
+          - { name: id, concat: [ UWB ] }
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB3, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: electoral_district_berlin_election_id }
+          - { name: BWK, rename: electoral_district_federal_election_id }
+  - id: berlin-electoral-districts-federal-election-2025
+    files:
+      - source_file_name: RBS_OD_UWB_BT25.shp
+        target_file_name: berlin-electoral-districts-federal-election-2025.geojson
+        target_projection_number: 4326
+        properties:
+          - { name: id, concat: [ UWB ] }
+          - { name: UWB, rename: electoral_district_id }
+          - { name: UWB3, rename: electoral_district_id_3 }
+          - { name: BWB, rename: postal_voting_district_id }
+          - { name: BWB3, rename: postal_voting_district_id_2 }
+          - { name: AWK, rename: electoral_district_berlin_election_id }
+          - { name: BEZ, rename: district_id }
+          - { name: BWK, rename: electoral_district_federal_election_id }
   - id: berlin-electoral-districts-european-election-2014
     files:
       - source_file_name: RBS_OD_STI_EU1405.shp
@@ -61,36 +105,6 @@ input_ports:
         properties:
           - { name: id, concat: [ UWB ] }
           - { name: BEZ, rename: district_id }
-          - { name: UWB, rename: electoral_district_id }
-          - { name: UWB3, rename: electoral_district_id_3 }
-          - { name: BWB, rename: postal_voting_district_id }
-          - { name: BWB3, rename: postal_voting_district_id_2 }
-          - { name: AWK, rename: electoral_district_berlin_election_id }
-          - { name: BWK, rename: electoral_district_federal_election_id }
-  - id: berlin-electoral-districts-federal-election-2017
-    files:
-      - source_file_name: RBS_OD_UWB.shp
-        target_file_name: berlin-electoral-districts-federal-election-2017.geojson
-        target_projection_number: 4326
-        properties:
-          - { name: id, concat: [ UWB ] }
-          - { name: FID_1, remove: True }
-          - { name: UWB, rename: electoral_district_id }
-          - { name: UWB3, rename: electoral_district_id_3 }
-          - { name: BWB, rename: postal_voting_district_id }
-          - { name: BWB2, rename: postal_voting_district_id_2 }
-          - { name: AWK, rename: electoral_district_berlin_election_id }
-          - { name: BEZ, rename: district_id }
-          - { name: BWK, rename: electoral_district_federal_election_id }
-          - { name: BEZNAME, remove: True }
-          - { name: OW, remove: True }
-  - id: berlin-electoral-districts-federal-election-2021
-    files:
-      - source_file_name: RBS_OD_UWB_AH21.shp
-        target_file_name: berlin-electoral-districts-federal-election-2021.geojson
-        target_projection_number: 4326
-        properties:
-          - { name: id, concat: [ UWB ] }
           - { name: UWB, rename: electoral_district_id }
           - { name: UWB3, rename: electoral_district_id_3 }
           - { name: BWB, rename: postal_voting_district_id }
