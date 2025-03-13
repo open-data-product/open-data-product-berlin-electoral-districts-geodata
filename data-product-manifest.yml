@@ -474,3 +474,6 @@ ubiquitous_language:
   - name: postal voting district
     description: 'German: Briefwahlbezirk, BWB'
 tags:
+  - berlin
+  - election
+  - geodata
