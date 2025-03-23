@@ -2,6 +2,7 @@ import getopt
 import os
 import sys
 
+from config.odps_loader import load_odps
 from lib.config.data_product_manifest_loader import load_data_product_manifest
 from lib.config.data_transformation_loader import load_data_transformation
 from lib.documentation.data_product_canvas_generator import generate_data_product_canvas
@@ -52,6 +53,7 @@ def main(argv):
 
     data_product_manifest = load_data_product_manifest(config_path=script_path)
     data_transformation = load_data_transformation(config_path=script_path)
+    odps = load_odps(config_path=script_path)
 
     #
     # Extract
