@@ -1,12 +1,12 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/issues)
+[![Issues](https://img.shields.io/github/issues/open-data-product/open-data-product-berlin-electoral-districts-geodata)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata/issues)
 
 <br />
 <p align="center">
-  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-electoral-districts-geodata">
+  <a href="https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata">
     <img src="logo_with_text.png" alt="Logo" height="80">
   </a>
 
-  <h1 align="center">Open Lifeworlds Data Product - Berlin Electoral Districts geodata</h1>
+  <h1 align="center">Open Data Product - Berlin Electoral Districts Geodata</h1>
 
   <p align="center">
     Data product providing geodata of Berlin electoral districts</a>
@@ -55,7 +55,7 @@ Examples:
 
 ## Roadmap
 
-See the [open issues](https://github.com/open-lifeworlds/berlin-electoral-districts-geodata/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/issues) for a list of proposed features (and known issues).
 
 ## License
 
@@ -63,4 +63,4 @@ Data product distributed under the [CC-BY 4.0 License](https://creativecommons.o
 
 ## Contact
 
-openlifeworlds@gmail.com
+opendataproduct@gmail.com
