@@ -10,8 +10,8 @@ from lib.extract.data_extractor import extract_data
 from lib.tracking_decorator import TrackingDecorator
 from lib.transform.data_bounding_box_converter import convert_bounding_box
 from lib.transform.data_geojson_converter import convert_to_geojson
-from lib.transform.data_projection_converter import convert_projection
 from lib.transform.data_geometry_converter import convert_data_geometry
+from lib.transform.data_projection_converter import convert_projection
 from lib.transform.data_property_converter import convert_data_properties
 
 file_path = os.path.realpath(__file__)

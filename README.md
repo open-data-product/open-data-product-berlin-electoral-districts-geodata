@@ -3,10 +3,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata">
-    <img src="logo_with_text.png" alt="Logo" height="80">
+    <img src="logo-with-text.png" alt="Logo" height="80">
   </a>
 
-  <h1 align="center">Open Data Product - Berlin Electoral Districts Geodata</h1>
+  <h1 align="center">Berlin Electoral Districts Geodata</h1>
 
   <p align="center">
     Data product providing geodata of Berlin electoral districts</a>
