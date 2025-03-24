@@ -7,7 +7,7 @@
 * description: Data product providing Berlin geodata of electoral districts
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 ## Input Ports
 
@@ -278,7 +278,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2016
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Schema**
 
@@ -297,7 +297,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-berlin-election-2021
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Schema**
 
@@ -319,7 +319,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2014
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Schema**
 
@@ -338,7 +338,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2019
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Schema**
 
@@ -360,7 +360,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-european-election-2024
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Schema**
 
@@ -382,7 +382,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2017
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Schema**
 
@@ -404,7 +404,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2021
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Schema**
 
@@ -426,7 +426,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/tree/main/data/02-silver/berlin-electoral-districts-federal-election-2025
 * license: CC-BY 4.0
-* updated: 2025-05-28
+* updated: 2025-05-30
 
 **Files**
 

@@ -43,14 +43,12 @@ uv venv
 Run this command to start the main script.
 
 ```shell
-python3 main.py [OPTION]...
+Usage: main.py [OPTIONS]
 
-  -h, --help                           show this help
-  -c, --clean                          clean intermediate results before start
-  -q, --quiet                          do not log outputs
-
-Examples:
-  python3 main.py -c
+Options:
+  --clean BOOLEAN  Regenerate results
+  --quiet BOOLEAN  Do not log outputs
+  --help           Show this message and exit.
 ```
 
 ## Roadmap
