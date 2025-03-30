@@ -19,7 +19,7 @@ product:
       - Berlin
       - elections
       - electoral districts
-    type: "analytics-software"
-    logoURL: "https://product.example.com/logo.png"
+    type: "source-aligned"
+    logoURL: "https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/refs/heads/main/logo-with-text.png"
     OutputFileFormats:
       - geojson
