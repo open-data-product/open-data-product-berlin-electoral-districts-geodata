@@ -12,6 +12,15 @@ from lib.tracking_decorator import TrackingDecorator
 def convert_data_geometry(
     data_transformation, source_path, results_path, clean=False, quiet=False
 ):
+    """
+    Converts inconsistent geometry
+    :param data_transformation: data transformation
+    :param source_path: source path
+    :param results_path: results path
+    :param clean: clean
+    :param quiet: quiet
+    :return:
+    """
     already_exists, converted, exception = 0, 0, 0
 
     if data_transformation.input_ports:

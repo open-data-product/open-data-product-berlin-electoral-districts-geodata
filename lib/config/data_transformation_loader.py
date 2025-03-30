@@ -1,7 +1,7 @@
 import collections
 import os
 from dataclasses import dataclass, field
-from typing import List, Optional
+from typing import List, Optional, Dict
 
 import yaml
 from dacite import from_dict
@@ -17,6 +17,8 @@ class Property:
     concat: Optional[List[str]] = None
     rename: Optional[str] = None
     remove: Optional[bool] = None
+    last_chars: Optional[int] = None
+    mapping: Optional[Dict] = None
 
 
 @dataclass

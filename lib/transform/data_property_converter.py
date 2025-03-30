@@ -11,6 +11,15 @@ from lib.tracking_decorator import TrackingDecorator
 def convert_data_properties(
     data_transformation, source_path, results_path, clean=False, quiet=False
 ):
+    """
+    Renames and removes properties of geojson features
+    :param data_transformation: data transformation
+    :param source_path: source path
+    :param results_path: results path
+    :param clean: clean
+    :param quiet: quiet
+    :return:
+    """
     already_exists, converted, exception = 0, 0, 0
 
     if data_transformation.input_ports:
@@ -67,6 +76,10 @@ def convert_properties(geojson, properties: list[Property]):
                 )
                 changed = True
 
+            if property.last_chars is not None and property.name in feature["properties"]:
+                feature["properties"][property.name] = feature["properties"][property.name][-property.last_chars:]
+                changed = True
+
             if property.rename is not None and property.name in feature["properties"]:
                 feature["properties"][property.rename] = feature["properties"].pop(
                     property.name
@@ -76,4 +89,11 @@ def convert_properties(geojson, properties: list[Property]):
             if property.remove is not None and property.name in feature["properties"]:
                 feature["properties"].pop(property.name)
                 changed = True
+
+            if property.mapping is not None:
+                id = feature["properties"]["id"]
+                value = property.mapping[id]
+                feature["properties"][property.name] = value
+                changed = True
+
     return geojson, changed

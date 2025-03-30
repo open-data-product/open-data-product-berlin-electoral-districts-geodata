@@ -1,4 +1,5 @@
 import os
+import shutil
 
 import geopandas as gpd
 
@@ -7,6 +8,15 @@ from lib.tracking_decorator import TrackingDecorator
 
 @TrackingDecorator.track_time
 def convert_to_geojson(data_transformation, source_path, results_path, clean, quiet):
+    """
+    Converts shape files into geojson
+    :param data_transformation: data transformation
+    :param source_path: source path
+    :param results_path: results path
+    :param clean: clean
+    :param quiet: quiet
+    :return:
+    """
     already_exists, converted, exception = 0, 0, 0
 
     if data_transformation.input_ports:
@@ -27,10 +37,15 @@ def convert_to_geojson(data_transformation, source_path, results_path, clean, qu
                 _, source_file_extension = os.path.splitext(source_file_path)
 
                 try:
+                    os.makedirs(
+                        os.path.join(results_path, input_port.id), exist_ok=True
+                    )
+
+                    if source_file_extension == ".geojson":
+                        shutil.copyfile(source_file_path, target_file_path)
+                        converted += 1
+                        not quiet and print(f"✓ Copy {file.target_file_name}")
                     if source_file_extension == ".shp":
-                        os.makedirs(
-                            os.path.join(results_path, input_port.id), exist_ok=True
-                        )
                         gpd.read_file(source_file_path).to_file(
                             target_file_path, driver="GeoJSON"
                         )
