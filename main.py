@@ -1,6 +1,8 @@
 import os
 import sys
 
+from documentation.odps_canvas_generator import generate_odps_canvas
+
 file_path = os.path.realpath(__file__)
 script_path = os.path.dirname(file_path)
 lib_path = os.path.join(script_path, "lib")
@@ -104,6 +106,11 @@ def main(clean, quiet):
 
     generate_data_product_canvas(
         data_product_manifest=data_product_manifest,
+        docs_path=docs_path,
+    )
+
+    generate_odps_canvas(
+        odps=odps,
         docs_path=docs_path,
     )
 

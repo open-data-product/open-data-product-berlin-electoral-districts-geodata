@@ -15,7 +15,7 @@
 
 ## About The Project
 
-See [data product canvas](docs/data-product-canvas.md).
+See [data product canvas](docs/data-product-canvas.md) and [ODPS canvas](./docs/odps-canvas.md).
 
 ### Built With
 
@@ -56,6 +56,8 @@ Options:
 See the [open issues](https://github.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/issues) for a list of proposed features (and known issues).
 
 ## License
+
+Source data distributed under [Creative Commons Namensnennung 3.0 Deutschland Lizenz](https://creativecommons.org/licenses/by/3.0/de/) by [Amt für Statistik Berlin-Brandenburg](https://www.statistik-berlin-brandenburg.de/).
 
 Data product distributed under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). See [LICENSE.md](./LICENSE.md) for more information.
 

@@ -76,8 +76,13 @@ def convert_properties(geojson, properties: list[Property]):
                 )
                 changed = True
 
-            if property.last_chars is not None and property.name in feature["properties"]:
-                feature["properties"][property.name] = feature["properties"][property.name][-property.last_chars:]
+            if (
+                property.last_chars is not None
+                and property.name in feature["properties"]
+            ):
+                feature["properties"][property.name] = feature["properties"][
+                    property.name
+                ][-property.last_chars :]
                 changed = True
 
             if property.rename is not None and property.name in feature["properties"]:
