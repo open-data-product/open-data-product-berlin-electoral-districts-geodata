@@ -1,7 +1,26 @@
 import os
 import sys
 
-from documentation.odps_canvas_generator import generate_odps_canvas
+from opendataproduct.config.data_product_manifest_loader import (
+    load_data_product_manifest,
+)
+from opendataproduct.config.geodata_transformation_loader import load_data_transformation
+from opendataproduct.config.odps_loader import load_odps
+from opendataproduct.document.data_product_canvas_generator import (
+    generate_data_product_canvas,
+)
+from opendataproduct.document.data_product_manifest_updater import (
+    update_data_product_manifest,
+)
+from opendataproduct.document.odps_canvas_generator import generate_odps_canvas
+from opendataproduct.extract.data_extractor import extract_data
+from opendataproduct.transform.geodata_bounding_box_converter import (
+    convert_bounding_box,
+)
+from opendataproduct.transform.geodata_geojson_converter import convert_to_geojson
+from opendataproduct.transform.geodata_geometry_converter import convert_data_geometry
+from opendataproduct.transform.geodata_projection_converter import convert_projection
+from opendataproduct.transform.geodata_property_converter import convert_data_properties
 
 file_path = os.path.realpath(__file__)
 script_path = os.path.dirname(file_path)
@@ -11,22 +30,10 @@ sys.path.append(lib_path)
 
 import click
 
-from lib.config.odps_loader import load_odps
-from lib.config.data_product_manifest_loader import load_data_product_manifest
-from lib.config.data_transformation_loader import load_data_transformation
-from lib.documentation.data_product_canvas_generator import generate_data_product_canvas
-from lib.documentation.data_product_manifest_updater import update_data_product_manifest
-from lib.extract.data_extractor import extract_data
-from lib.transform.data_bounding_box_converter import convert_bounding_box
-from lib.transform.data_geojson_converter import convert_to_geojson
-from lib.transform.data_geometry_converter import convert_data_geometry
-from lib.transform.data_projection_converter import convert_projection
-from lib.transform.data_property_converter import convert_data_properties
-
 
 @click.command()
-@click.option("--clean", default=False, help="Regenerate results.")
-@click.option("--quiet", default=False, help="Do not log outputs.")
+@click.option("--clean", "-c", default=False, is_flag=True, help="Regenerate results.")
+@click.option("--quiet", "-q", default=False, is_flag=True, help="Do not log outputs.")
 def main(clean, quiet):
     data_path = os.path.join(script_path, "data")
     bronze_path = os.path.join(data_path, "01-bronze")

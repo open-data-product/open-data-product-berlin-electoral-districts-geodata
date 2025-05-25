@@ -1,15 +1,15 @@
 [project]
 name = "berlin-electoral-districts-geodata"
 version = "0.1.0"
-description = "Add your description here"
+description = "Source-aligned data product providing Berlin geodata of electoral districts"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
     "click>=8.2.1",
-    "dacite==1.8.1",
-    "geopandas>=1.0.1",
-    "pandas==2.2.3",
-    "pyyaml==6.0.2",
-    "requests==2.32.3",
-    "tqdm>=4.67.1",
+    "open-data-product-python-lib",
 ]
+
+[tool.uv.sources]
+open-data-product-python-lib = { git = "https://github.com/open-data-product/open-data-product-python-lib.git" }
+
+
