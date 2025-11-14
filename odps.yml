@@ -1,25 +1,53 @@
 ---
 schema: https://opendataproducts.org/v3.1/schema/odps.yaml
-version: 3.1
+version: '3.1'
 product:
-  dataHolder:
-    URL: "https://opendataproduct.de"
   en:
-    name: "Berlin Electoral Districts Geodata"
-    productID: "berlin-electoral-districts-geodata"
-    valueProposition: "Providing Berlin geodata of electoral districts"
-    description: "Data product providing Berlin geodata of electoral districts"
-    productSeries: "Berlin Geodata Series"
-    visibility: "public"
-    status: "active"
-    version: "1.0"
-    categories:
-      - geodata
-    tags:
-      - Berlin
-      - elections
-      - electoral districts
-    type: "source-aligned"
-    logoURL: "https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-electoral-districts-geodata/refs/heads/main/logo-with-text.png"
+    name: Berlin Electoral Districts geodata
+    productID: berlin-electoral-districts-geodata
+    status: active
+    type: source-aligned
+    visibility: public
     OutputFileFormats:
       - geojson
+      - json
+    brandSlogan:
+    categories:
+      - geodata
+    description: Data product providing Berlin geodata of electoral districts
+    logoURL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
+    productSeries: Berlin Geodata Series
+    standards: []
+    tags:
+      - berlin
+      - election
+      - geodata
+    useCases: []
+    valueProposition: Providing Berlin geodata of electoral districts
+    version: '1.0'
+  sla: []
+  dataAccess:
+  dataHolder:
+    URL: https://opendataproduct.de
+    addressCountry:
+    addressLocality:
+    addressRegion:
+    streetAddress:
+    postalCode:
+    telephone:
+    aggregateRating:
+    businessDomain:
+    description:
+    logoURL:
+    parentOrganization:
+    ratingCount:
+    slogan:
+    taxID:
+    vatID:
+  dataOps:
+  dataQuality: []
+  license:
+  pricingPlans:
+  support:
+  recommendedDataProducts: []
+details:

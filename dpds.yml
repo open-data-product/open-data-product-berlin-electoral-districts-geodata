@@ -1,0 +1,259 @@
+---
+dataProductDescriptor: data-product-descriptor
+info:
+  fullyQualifiedName: urn:dpds:opendataproduct:dataproducts:berlin-electoral-districts-geodata:1.0
+  name: Berlin Electoral Districts geodata
+  version: '1.0'
+  domain: domain
+  owner:
+    id: Open Data product
+    name: Open Data product
+  id: berlin-electoral-districts-geodata
+  entityType:
+  displayName: Berlin Electoral Districts geodata
+  description: Data product providing Berlin geodata of electoral districts
+  contactPoints:
+interfaceComponents:
+  outputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-berlin-election-2016
+      fullyQualifiedName: berlin-electoral-districts-berlin-election-2016
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: Berlin electoral districts for Berlin election 2016
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-berlin-election-2021
+      fullyQualifiedName: berlin-electoral-districts-berlin-election-2021
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: Berlin electoral districts for Berlin election 2021
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-european-election-2014
+      fullyQualifiedName: berlin-electoral-districts-european-election-2014
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: Berlin electoral districts for European election 2014
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-european-election-2019
+      fullyQualifiedName: berlin-electoral-districts-european-election-2019
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: Berlin electoral districts for European election 2019
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-european-election-2024
+      fullyQualifiedName: berlin-electoral-districts-european-election-2024
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: Berlin electoral districts for European election 2024
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2017
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2017
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: Berlin electoral districts for federal election 2017
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2021
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2021
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: Berlin electoral districts for federal election 2021
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2025
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2025
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  inputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-berlin-election-2016
+      fullyQualifiedName: berlin-electoral-districts-berlin-election-2016
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-berlin-election-2021
+      fullyQualifiedName: berlin-electoral-districts-berlin-election-2021
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2013
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2013
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2017
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2017
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2021
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2021
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2024
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2024
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-federal-election-2025
+      fullyQualifiedName: berlin-electoral-districts-federal-election-2025
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-european-election-2014
+      fullyQualifiedName: berlin-electoral-districts-european-election-2014
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-european-election-2019
+      fullyQualifiedName: berlin-electoral-districts-european-election-2019
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-electoral-districts-european-election-2024
+      fullyQualifiedName: berlin-electoral-districts-european-election-2024
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  discoveryPorts:
+  observabilityPorts:
+  controlPorts:
+internalComponents:
+components:
+tags:
+externalDocs:
